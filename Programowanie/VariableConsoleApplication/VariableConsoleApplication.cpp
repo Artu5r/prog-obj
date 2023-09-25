@@ -12,6 +12,6 @@ int main()
 /*
 Algorytm - skoñczony zbiór instrukcji, który rozwi¹zuje zadany problem , okreœla te¿ kolejnoœæ wykonywania instrukcji
 Zapis algorytmu:
-rysunki
+rysunkia
 
 */
