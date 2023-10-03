@@ -1,14 +1,120 @@
 #include <iostream>
 
-int main()
+//napisz pragram ktory wczyta liczbe od urzytkownika i wyswietli ja
+void task1()
 {
     int num_from_user;
 
     std::cout << "Podaj liczbe: ";
     std::cin >> num_from_user;
     std::cout << "Podales: " << num_from_user;
+}
+
+//program obliczjacy srednia arytmetyczna 2 liczb
+void task2()
+{
+    int firstNumber, secoundNumber, average;
+
+    std::cout << "Podaj 1 liczbe ";
+    std::cin >> firstNumber;
+    std::cout << "\nPodaj 2 liczbe ";
+    std::cin >> secoundNumber;
+    average = (firstNumber + secoundNumber) / 2;
+
+    std::cout << "\nSrednia to: " << average;
+}
+
+//Program obliczaj¹cy pole prostok¹ta.
+void task3()
+{
+    int side1, side2, area;
+
+    std::cout << "Podaj bok a ";
+    std::cin >> side1;
+    std::cout << "\nPodaj bok b ";
+    std::cin >> side2;
+    area = side1 * side2;
+    std::cout << "\nPole = " << area;
+}
+
+//Program obliczaj¹cy objêtoœæ sto¿ka.
+void task4()
+{
+    float radius, height, area;
+
+    std::cout << "Podaj promien kola ";
+    std::cin >> radius;
+    std::cout << "\nPodaj wysokosc ";
+    std::cin >> height;
+    area = (3.14 * (radius * radius)) * (1 / 3.0 * height);
+    std::cout << "\nObj = " << area;
+}
+
+//Program obliczaj¹cy pole ko³a.
+void task5()
+{
+    float radius, area;
+
+    std::cout << "Podaj promien kola ";
+    std::cin >> radius;
+    area = 3.14 * (radius * radius);
+    std::cout << "\nObj = " << area;
+}
+
+//Program obliczaj¹cy wartoœæ wyra¿enia a^2 + b^2
+void task6()
+{
+    float numberA, numberB, result;
+
+    std::cout << "Podaj a ";
+    std::cin >> numberA;
+    std::cout << "\nPodaj b ";
+    std::cin >> numberB;
+    result = (numberA * numberA) + (numberB * numberB);
+    std::cout << "\na^2 + b^2 = " << result;
+}
+
+//Program obliczaj¹cy pole trójk¹ta o podstawie b i wysokoœci h
+void task7()
+{
+    float side1, side2, area;
+
+    std::cout << "Podaj bok a ";
+    std::cin >> side1;
+    std::cout << "\nPodaj wysokosc ";
+    std::cin >> side1;
+    area = (3.14 * (radius * radius)) * (1 / 3.0 * height);
+    std::cout << "\nObj = " << area;
+}
+
+
+int main()
+{
+    setlocale(LC_CTYPE, "polish");
+
+    //task1();
+    //task2();
+    //task3();
+    //task4();
+    //task5();
+    //task6();
+    task7();
     
 }
+
+/*
+
+*. 
+*. 
+*. 
+*. 
+*. Program obliczaj¹cy objêtoœæ kuli o promieniu r
+*. Program obliczaj¹cy pole trapezu o podstawach a i b oraz wysokoœci h
+*. Program obliczaj¹cy œredni¹ wa¿on¹ trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
+*. Stwórz program, który pobiera od u¿ytkownika d³ugoœæ w metrach i przelicza j¹ na centymetry i milimetry, wyœwietlaj¹c wynik.
+*. Napisz program, który konwertuje wprowadzon¹ kwotê w jednej walucie na inn¹, korzystaj¹c z okreœlonego kursu wymiany.
+*/
+
 
 /*
  d
