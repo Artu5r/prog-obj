@@ -66,9 +66,9 @@ void task6()
 {
     float numberA, numberB, result;
 
-    std::cout << "Podaj a ";
+    std::cout << "Podaj a: ";
     std::cin >> numberA;
-    std::cout << "\nPodaj b ";
+    std::cout << "\nPodaj b: ";
     std::cin >> numberB;
     result = (numberA * numberA) + (numberB * numberB);
     std::cout << "\na^2 + b^2 = " << result;
@@ -77,16 +77,41 @@ void task6()
 //Program obliczaj¹cy pole trójk¹ta o podstawie b i wysokoœci h
 void task7()
 {
-    float side1, side2, area;
+    float triangleBase, triangleHeight, area;
 
-    std::cout << "Podaj bok a ";
-    std::cin >> side1;
-    std::cout << "\nPodaj wysokosc ";
-    std::cin >> side1;
-    area = (3.14 * (radius * radius)) * (1 / 3.0 * height);
-    std::cout << "\nObj = " << area;
+    std::cout << "Podaj dlugosc podstawy trojkata: ";
+    std::cin >> triangleBase;
+    std::cout << "\nPodaj wysokosc trojkata: ";
+    std::cin >> triangleHeight;
+    area = (triangleBase * triangleHeight) / 2;
+    std::cout << "\nObj trojkata = " << area;
 }
 
+//Program obliczaj¹cy objêtoœæ kuli o promieniu r
+void task8()
+{
+    float radius, area;
+
+    std::cout << "Podaj promien kuli: ";
+    std::cin >> radius;
+    area = (4 / 3.0) * 3.14 * (radius * radius * radius);
+    std::cout << "\nObjetosc kuli = " << area;
+}
+
+//Program obliczaj¹cy pole trapezu o podstawach a i b oraz wysokoœci h
+void task9()
+{
+    float baseTrapezeA, baseTrapezeB, height, area;
+
+    std::cout << "Podaj podstawe trapezu a: ";
+    std::cin >> baseTrapezeA;
+    std::cout << "Podaj podstawe trapezu b: ";
+    std::cin >> baseTrapezeB;
+    std::cout << "Podaj wysokosc trapezu h: ";
+    std::cin >> height;
+    area = ((baseTrapezeA + baseTrapezeB) * height) / 2;
+    std::cout << "Pole trapezu = " << area;
+}
 
 int main()
 {
@@ -98,8 +123,9 @@ int main()
     //task4();
     //task5();
     //task6();
-    task7();
-    
+    //task7();
+    //task8();
+    //task9();
 }
 
 /*
@@ -108,8 +134,8 @@ int main()
 *. 
 *. 
 *. 
-*. Program obliczaj¹cy objêtoœæ kuli o promieniu r
-*. Program obliczaj¹cy pole trapezu o podstawach a i b oraz wysokoœci h
+*. 
+*. 
 *. Program obliczaj¹cy œredni¹ wa¿on¹ trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
 *. Stwórz program, który pobiera od u¿ytkownika d³ugoœæ w metrach i przelicza j¹ na centymetry i milimetry, wyœwietlaj¹c wynik.
 *. Napisz program, który konwertuje wprowadzon¹ kwotê w jednej walucie na inn¹, korzystaj¹c z okreœlonego kursu wymiany.
@@ -117,7 +143,6 @@ int main()
 
 
 /*
- d
 Algorytm - skoñczony zbiór instrukcji, który rozwi¹zuje zadany problem , okreœla te¿ kolejnoœæ wykonywania instrukcji
 Zapis algorytmu:
     -rysunki
