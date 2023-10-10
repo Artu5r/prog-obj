@@ -16,14 +16,23 @@ void task1()
 	{
 		std::cout << "Liczba jest ujemna\n";
 	}
+	
+	if (numberFromUser == 0)
+		std::cout << "0 nie jest ani + ani -\n";
 }
 
-void task2()
-{
-
-}
 
 int main()
 {
 	task1();
 }
+
+/*
+Operatory warunkowe:
+	< - wiekszy
+	> - mniejszy
+	<= - wiekszy rowny
+	== - rowny
+	!= - rozny
+
+*/
