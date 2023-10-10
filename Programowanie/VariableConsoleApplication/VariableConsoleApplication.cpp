@@ -4,11 +4,11 @@
 //napisz pragram ktory wczyta liczbe od urzytkownika i wyswietli ja
 void task1()
 {
-	int num_from_user;
+	int numFromUser;
 
 	std::cout << "Podaj liczbe: ";
-	std::cin >> num_from_user;
-	std::cout << "Podales: " << num_from_user;
+	std::cin >> numFromUser;
+	std::cout << "Podales: " << numFromUser;
 }
 
 //program obliczjacy srednia arytmetyczna 2 liczb
@@ -28,13 +28,13 @@ void task2()
 //Program obliczaj¹cy pole prostok¹ta.
 void task3()
 {
-	int side1, side2, area;
+	int firtsSide, secoundSide, area;
 
 	std::cout << "Podaj bok a ";
-	std::cin >> side1;
+	std::cin >> firtsSide;
 	std::cout << "\nPodaj bok b ";
-	std::cin >> side2;
-	area = side1 * side2;
+	std::cin >> secoundSide;
+	area = firtsSide * secoundSide;
 	std::cout << "\nPole = " << area;
 }
 
@@ -155,8 +155,12 @@ void task12()
 {
 	float moneyFromUser, conversion, exchangeRate;
 
-
+	std::cout << "Podaj kwote: ";
+	std::cin >> moneyFromUser;
+	std::cout << "Podaj kurs wymiany dla 1 = ";
+	std::cin >> conversion;
 	exchangeRate = moneyFromUser * conversion;
+	std::cout << "\nPrzeliczona kwota wynosi " << exchangeRate << "\n";
 }
 
 int main()
