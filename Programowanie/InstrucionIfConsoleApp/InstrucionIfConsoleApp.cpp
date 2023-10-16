@@ -21,10 +21,25 @@ void task1()
 		std::cout << "0 nie jest ani + ani -\n";
 }
 
+//czy liczba jest parzysta
+void task2()
+{
+	int numberFromUser;
+
+	std::cout << "Podaj liczbe: ";
+	std::cin >> numberFromUser;
+	
+	int rest = numberFromUser % 2; // % reszta z dzielenia
+	
+	if (rest != 0)
+		std::cout << "Podana liczba jest nieparzysta!\n";
+	else
+		std::cout << "Podana liczba ejst parzysta!\n";
+}
 
 int main()
 {
-	task1();
+	task2();
 }
 
 /*
