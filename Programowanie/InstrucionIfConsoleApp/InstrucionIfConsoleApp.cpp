@@ -114,12 +114,68 @@ void task4()
 //Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i sprawdzi, czy s¹ one równe. Wyœwietl odpowiedni komunikat.
 void task5()
 {
+	int firstNumber, secondNumber;
+	std::cout << "Podaj 1 liczbe: ";
+	std::cin >> firstNumber;
+	std::cout << "Podaj 2 liczbe: ";
+	std::cin >> secondNumber;
+
+	if (firstNumber == secondNumber)
+		std::cout << "Liczby sa rowne.\n";
+	else
+		std::cout << "Liczby sa rozne.\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie wieku i sprawdzi, czy osoba jest pe³noletnia. Wyœwietl odpowiedni komunikat.
+void task6()
+{
+	int age;
+	std::cout << "Podaj wiek liczbe: ";
+	std::cin >> age;
+	
+	if (age < 18)
+		std::cout << "Jestes niepelnoletni.\n";
+	else
+		std::cout << "Jests pelnoletni.\n";
+}
+
+// Napisz program, który poprosi u¿ytkownika o podanie liczby od 1 do 7 i wyœwietli odpowiadaj¹cy mu dzieñ tygodnia.
+void task7()
+{
+	int number;
+	std::cout << "Podaj liczbe od 1 do 7: ";
+	std::cin >> number;
+	
+	if (number >= 1 && number <= 7)
+	{
+		if (number == 1)
+			std::cout << "Poniedzialek\n";
+		if(number == 2)
+			std::cout << "Wtorek\n";
+		if (number == 3)
+			std::cout << "Sroda\n";
+		if(number == 4)
+			std::cout << "Czwartek\n";
+		if(number == 5)
+			std::cout << "Piatek\n";
+		if(number == 6)
+			std::cout << "Sobota\n";
+		if(number == 7)
+			std::cout << "Niedziela\n";
+	}
+	else
+		std::cout << "Nie podales liczby od 1 do 7\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i wyœwietli wiêksz¹ z nich.
+void task8()
+{
 
 }
 
 int main()
 {
-	task4();
+	task8();
 }
 
 /*
@@ -144,11 +200,11 @@ Operatory warunkowe:
 */
 
 /*
+*.Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
+*. 
 *.
-*. Napisz program, który poprosi u¿ytkownika o podanie wieku i sprawdzi, czy osoba jest pe³noletnia. Wyœwietl odpowiedni komunikat.
-*. Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
-*. Napisz program, który poprosi u¿ytkownika o podanie liczby od 1 do 7 i wyœwietli odpowiadaj¹cy mu dzieñ tygodnia.
-*. Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i wyœwietli wiêksz¹ z nich.
+*. 
+*. 
 *. Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
 *. Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyœwietl odpowiedni komunikat.
 *. Napisz program, który poprosi u¿ytkownika o podanie masy cia³a (w kilogramach) i wzrostu (w metrach). Na podstawie tych danych oblicz wskaŸnik BMI (Body Mass Index) i wyœwietl odpowiedni komunikat informuj¹cy o stanie zdrowia.
