@@ -170,7 +170,16 @@ void task7()
 //Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i wyœwietli wiêksz¹ z nich.
 void task8()
 {
+	int firstNumber, secondNumber;
+	std::cout << "Podaj 1 liczbe: ";
+	std::cin >> firstNumber;
+	std::cout << "Podaj 2 liczbe: ";
+	std::cin >> secondNumber;
 
+	if (firstNumber > secondNumber)
+		std::cout << "1 liczba jest wieksza.\n";
+	else
+		std::cout << "2 liczba jest wieksza.\n";
 }
 
 int main()
