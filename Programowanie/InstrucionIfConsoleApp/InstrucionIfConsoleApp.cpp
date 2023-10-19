@@ -1,3 +1,4 @@
+//01000001 01110010 01110100 01110101 01110010 01001011
 #include <iostream>
 
 //czy liczba jest dodatnia
@@ -7,7 +8,7 @@ void task1()
 
 	std::cout << "Podaj liczbe: ";
 	std::cin >> numberFromUser;
-	
+
 	if (numberFromUser > 0)
 	{
 		std::cout << "Liczba jest dodatnia\n";
@@ -16,7 +17,7 @@ void task1()
 	{
 		std::cout << "Liczba jest ujemna\n";
 	}
-	
+
 	if (numberFromUser == 0)
 		std::cout << "0 nie jest ani + ani -\n";
 }
@@ -28,9 +29,9 @@ void task2()
 
 	std::cout << "Podaj liczbe: ";
 	std::cin >> numberFromUser;
-	
+
 	int rest = numberFromUser % 2; // % reszta z dzielenia
-	
+
 	if (rest != 0)
 		std::cout << "Podana liczba jest nieparzysta!\n";
 	else
@@ -132,35 +133,35 @@ void task6()
 	int age;
 	std::cout << "Podaj wiek liczbe: ";
 	std::cin >> age;
-	
+
 	if (age < 18)
 		std::cout << "Jestes niepelnoletni.\n";
 	else
 		std::cout << "Jests pelnoletni.\n";
 }
-
+//01000001 01110010 01110100 01110101 01110010 01001011
 // Napisz program, który poprosi u¿ytkownika o podanie liczby od 1 do 7 i wyœwietli odpowiadaj¹cy mu dzieñ tygodnia.
 void task7()
 {
 	int number;
 	std::cout << "Podaj liczbe od 1 do 7: ";
 	std::cin >> number;
-	
+
 	if (number >= 1 && number <= 7)
 	{
 		if (number == 1)
 			std::cout << "Poniedzialek\n";
-		if(number == 2)
+		if (number == 2)
 			std::cout << "Wtorek\n";
 		if (number == 3)
 			std::cout << "Sroda\n";
-		if(number == 4)
+		if (number == 4)
 			std::cout << "Czwartek\n";
-		if(number == 5)
+		if (number == 5)
 			std::cout << "Piatek\n";
-		if(number == 6)
+		if (number == 6)
 			std::cout << "Sobota\n";
-		if(number == 7)
+		if (number == 7)
 			std::cout << "Niedziela\n";
 	}
 	else
@@ -177,17 +178,78 @@ void task8()
 	std::cin >> secondNumber;
 
 	if (firstNumber > secondNumber)
-		std::cout << "1 liczba jest wieksza.\n";
+		std::cout << "Pierwsza liczba jest wieksza.\n";
 	else
-		std::cout << "2 liczba jest wieksza.\n";
+		std::cout << "Dróga liczba jest wieksza.\n";
 }
+
+//Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
+void task9()
+{
+	//ostatni 2020
+	int year;
+
+	std::cout << "Podaj rok XXXX: ";
+	std::cin >> year;
+
+	if ((year % 4) == 0 && (year % 100 != 0) || (year % 100 == 0) && (year % 400 == 0))
+	{
+		std::cout << "Rok jest przestepny\n";
+	}
+	else
+		std::cout << "Rok jest nie przestepny\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyœwietl odpowiedni komunikat.
+void task10()
+{
+	int num;
+
+	std::cout << "Podaj liczbe: ";
+	std::cin >> num;
+
+	if (num % 3 == 0 && num % 5 == 0)
+		std::cout << "Liczba jest podzielna przez 3 i 5\n";
+	else
+		std::cout << "Liczba nie jest podzielna przez 3 i 5\n";
+}
+
+// Napisz program, który poprosi u¿ytkownika o podanie masy cia³a (w kilogramach) i wzrostu (w metrach). Na podstawie tych danych oblicz wskaŸnik BMI (Body Mass Index)//01000001 01110010 01110100 01110101 01110010 01001011 i wyœwietl odpowiedni komunikat informuj¹cy o stanie zdrowia.
+void task11()
+{
+	float weight, height, bmi;
+
+	std::cout << "Podaj wage: ";
+	std::cin >> weight;
+	std::cout << "Podaj wzrost w m: ";
+	std::cin >> height;
+
+	bmi = weight / (height * height);
+	std::cout << "BMI = " << bmi << "\n";
+	
+	if (bmi < 18.5)
+		std::cout << "Stan zdrowia = niedowaga\n";
+	if (bmi >= 18.5 && bmi < 25)
+		std::cout << "Stan zdrowia = norma\n";
+	if (bmi >= 25 && bmi < 30)
+		std::cout << "Stan zdrowia = nadwaga\n";
+	if (bmi >= 30 && bmi < 35)
+		std::cout << "Stan zdrowia = otylosc\n";
+	if (bmi > 35)
+		std::cout << "Stan zdrowia = otylosc kliniczna\n";
+}
+
+
 
 int main()
 {
-	task8();
+	setlocale(LC_CTYPE, "polish");
+
+	task11();
 }
 
 /*
+//01000001 01110010 01110100 01110101 01110010 01001011
 Operatory warunkowe:
 	< - wiekszy
 	> - mniejszy
@@ -200,7 +262,7 @@ Operatory warunkowe:
 	! - NOT
 
 	a	b	a&&b	a||b	!a		a XOR b
-	F	F	F		 F		 T			F		
+	F	F	F		 F		 T			F
 	F	T	F		 T		 T			T
 	T	F	F		 T		 F			T
 	T	T	T		 T		 F			F
@@ -210,15 +272,9 @@ Operatory warunkowe:
 
 /*
 *.Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
-*. 
 *.
-*. 
-*. 
-*. Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
-*. Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyœwietl odpowiedni komunikat.
-*. Napisz program, który poprosi u¿ytkownika o podanie masy cia³a (w kilogramach) i wzrostu (w metrach). Na podstawie tych danych oblicz wskaŸnik BMI (Body Mass Index) i wyœwietl odpowiedni komunikat informuj¹cy o stanie zdrowia.
 *. Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci trzech odcinków i sprawdzi, czy mo¿na zbudowaæ z nich trójk¹t. Wyœwietl odpowiedni komunikat.
 *. Napisz program, który poprosi u¿ytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeœli jest to mo¿liwe. Wyœwietl wynik lub odpowiedni komunikat, jeœli liczba jest ujemna.
 *. Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
-*. 
+*.
 */
