@@ -192,12 +192,17 @@ void task9()
 	std::cout << "Podaj rok XXXX: ";
 	std::cin >> year;
 
-	if ((year % 4) == 0 && (year % 100 != 0) || (year % 100 == 0) && (year % 400 == 0))
+	if (year > 0 && year != 0)
 	{
-		std::cout << "Rok jest przestepny\n";
+		if ((year % 4) == 0 && (year % 100 != 0) || (year % 100 == 0) && (year % 400 == 0))
+		{
+			std::cout << "Rok jest przestepny\n";
+		}
+		else
+			std::cout << "Rok jest nie przestepny\n";
 	}
 	else
-		std::cout << "Rok jest nie przestepny\n";
+		std::cout << "Rok nie moze byc ujemny i rowanc sie 0!\n";
 }
 
 //Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyœwietl odpowiedni komunikat.
@@ -226,7 +231,7 @@ void task11()
 
 	bmi = weight / (height * height);
 	std::cout << "BMI = " << bmi << "\n";
-	
+
 	if (bmi < 18.5)
 		std::cout << "Stan zdrowia = niedowaga\n";
 	if (bmi >= 18.5 && bmi < 25)
@@ -244,44 +249,132 @@ void task12()
 {
 	float firstWeight, secondWeight, thirdWeight;
 
-	std::cout << "Najdluzsza wartosc podaj jako ostatnia\n";
 	std::cout << "Podaj 1 dlugosc: ";
 	std::cin >> firstWeight;
 	std::cout << "Podaj 2 dlugosc: ";
 	std::cin >> secondWeight;
-	std::cout << "Podaj najdluzsza dlugosc: ";
+	std::cout << "Podaj 3 dlugosc: ";
 	std::cin >> thirdWeight;
 
-	if (firstWeight + secondWeight > thirdWeight)
+
+	if (firstWeight > secondWeight && firstWeight > thirdWeight)
 	{
-		std::cout << "Da sie utworzyc trojkat\n";
+		if ((secondWeight + thirdWeight) > firstWeight)
+		{
+			std::cout << "Da sie utworzyc trojkata\n";
+		}
+		else
+			std::cout << "Nie da sie utworzyc trojkata\n";
 	}
 	else
-		std::cout << "Nie da sie utworzyc trojkat\n";
+	{
+		if (secondWeight > firstWeight && secondWeight > thirdWeight)
+		{
+			if ((firstWeight + thirdWeight) > secondWeight)
+			{
+				std::cout << "Da sie utworzyc trojkata\n";
+			}
+			else
+				std::cout << "Nie da sie utworzyc trojkata\n";
+		}
+		else
+		{
+			if ((firstWeight + secondWeight) > thirdWeight)
+			{
+				std::cout << "Da sie utworzyc trojkata\n";
+			}
+			else
+				std::cout << "Nie da sie utworzyc trojkata\n";
+		}
+	}
 }
 
 //Napisz program, który poprosi u¿ytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeœli jest to mo¿liwe. Wyœwietl wynik lub odpowiedni komunikat, jeœli liczba jest ujemna.
 void task13()
 {
 	float firstNum, result;
-	
+
 	std::cout << "Podaj liczbe dodatnia: ";
 	std::cin >> firstNum;
 
 	if (firstNum > 0)
 	{
-		result = 
+		result = firstNum;//???
 	}
-	
-
-
+	else
+		std::cout << "Nie podales liczby dodatniej";
 }
+
+//Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
+void task14()
+{
+	int day, month, year;
+
+	std::cout << "Podaj rok: ";
+	std::cin >> year;
+	std::cout << "Podaj miesiac: ";
+	std::cin >> month;
+	std::cout << "Podaj dzien: ";
+	std::cin >> day;
+
+	if (year > 0 && year != 0)
+	{
+		if (month > 0 && month <= 12)
+		{
+			if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+			{
+				if (day > 0 && day <= 31)
+				{
+					//std::cout << "31\n";
+					std::cout << "Poprawna data\n";
+				}
+			}
+			else
+			{
+				if (month == 2)
+				{
+					if ((year % 4) == 0 && (year % 100 != 0) || (year % 100 == 0) && (year % 400 == 0))
+					{
+						if (day > 0 && day <= 29)
+						{
+							//std::cout << "29\n";
+							std::cout << "Poprawna data\n";
+						}
+					}
+					else
+					{
+						if (day > 0 && day <= 28)
+						{
+							//std::cout << "28\n";
+							std::cout << "Poprawna data\n";
+						}
+					}
+				}
+				else
+				{
+					if (day > 0 && day <= 30)
+					{
+						//std::cout << "30\n";
+						std::cout << "Poprawna data";
+					}
+				}
+			}
+		}
+		else
+			std::cout << "Podales bledne dane\n";
+	}
+	else
+	{
+		std::cout << "Rok nie moze byc ujemny i rowanc sie 0!\n";
+	}
+}
+
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task12();
+	task14();
 }
 
 /*
@@ -309,8 +402,8 @@ Operatory warunkowe:
 /*
 *.Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
 *.
-*. 
-*. 
-*. Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
+*.
+*.
+*.
 *.
 */
