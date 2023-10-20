@@ -369,12 +369,18 @@ void task14()
 	}
 }
 
+//Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
+void task15()
+{
+
+}
+
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task14();
+	task15();
 }
 
 /*
@@ -400,10 +406,5 @@ Operatory warunkowe:
 */
 
 /*
-*.Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
-*.
-*.
-*.
-*.
 *.
 */
