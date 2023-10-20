@@ -239,13 +239,49 @@ void task11()
 		std::cout << "Stan zdrowia = otylosc kliniczna\n";
 }
 
+//Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci trzech odcinków i sprawdzi, czy mo¿na zbudowaæ z nich trójk¹t. Wyœwietl odpowiedni komunikat.
+void task12()
+{
+	float firstWeight, secondWeight, thirdWeight;
 
+	std::cout << "Najdluzsza wartosc podaj jako ostatnia\n";
+	std::cout << "Podaj 1 dlugosc: ";
+	std::cin >> firstWeight;
+	std::cout << "Podaj 2 dlugosc: ";
+	std::cin >> secondWeight;
+	std::cout << "Podaj najdluzsza dlugosc: ";
+	std::cin >> thirdWeight;
+
+	if (firstWeight + secondWeight > thirdWeight)
+	{
+		std::cout << "Da sie utworzyc trojkat\n";
+	}
+	else
+		std::cout << "Nie da sie utworzyc trojkat\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeœli jest to mo¿liwe. Wyœwietl wynik lub odpowiedni komunikat, jeœli liczba jest ujemna.
+void task13()
+{
+	float firstNum, result;
+	
+	std::cout << "Podaj liczbe dodatnia: ";
+	std::cin >> firstNum;
+
+	if (firstNum > 0)
+	{
+		result = 
+	}
+	
+
+
+}
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task11();
+	task12();
 }
 
 /*
@@ -273,8 +309,8 @@ Operatory warunkowe:
 /*
 *.Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
 *.
-*. Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci trzech odcinków i sprawdzi, czy mo¿na zbudowaæ z nich trójk¹t. Wyœwietl odpowiedni komunikat.
-*. Napisz program, który poprosi u¿ytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeœli jest to mo¿liwe. Wyœwietl wynik lub odpowiedni komunikat, jeœli liczba jest ujemna.
+*. 
+*. 
 *. Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
 *.
 */
