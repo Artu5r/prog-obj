@@ -299,7 +299,7 @@ void task13()
 
 	if (firstNum > 0)
 	{
-		result = firstNum;//???
+		result = 1;//????????????
 	}
 	else
 		std::cout << "Nie podales liczby dodatniej";
@@ -328,6 +328,10 @@ void task14()
 					//std::cout << "31\n";
 					std::cout << "Poprawna data\n";
 				}
+				else
+				{
+					std::cout << "Podales bledne dane\n";
+				}
 			}
 			else
 			{
@@ -340,6 +344,10 @@ void task14()
 							//std::cout << "29\n";
 							std::cout << "Poprawna data\n";
 						}
+						else
+						{
+							std::cout << "Podales bledne dane\n";
+						}
 					}
 					else
 					{
@@ -347,6 +355,10 @@ void task14()
 						{
 							//std::cout << "28\n";
 							std::cout << "Poprawna data\n";
+						}
+						else
+						{
+							std::cout << "Podales bledne dane\n";
 						}
 					}
 				}
@@ -356,6 +368,10 @@ void task14()
 					{
 						//std::cout << "30\n";
 						std::cout << "Poprawna data";
+					}
+					else
+					{
+						std::cout << "Podales bledne dane\n";
 					}
 				}
 			}
@@ -380,7 +396,7 @@ int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task15();
+	task13();
 }
 
 /*
