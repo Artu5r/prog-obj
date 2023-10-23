@@ -1,5 +1,7 @@
 //01000001 01110010 01110100 01110101 01110010 01001011
 #include <iostream>
+#include <cmath>
+
 
 //czy liczba jest dodatnia
 void task1()
@@ -9,17 +11,21 @@ void task1()
 	std::cout << "Podaj liczbe: ";
 	std::cin >> numberFromUser;
 
-	if (numberFromUser > 0)
+	if (numberFromUser != 0)
 	{
-		std::cout << "Liczba jest dodatnia\n";
+		if (numberFromUser > 0)
+		{
+			std::cout << "Liczba jest dodatnia\n";
+		}
+		else
+		{
+			std::cout << "Liczba jest ujemna\n";
+		}
 	}
 	else
-	{
-		std::cout << "Liczba jest ujemna\n";
-	}
-
-	if (numberFromUser == 0)
 		std::cout << "0 nie jest ani + ani -\n";
+
+
 }
 
 //czy liczba jest parzysta
@@ -299,10 +305,11 @@ void task13()
 
 	if (firstNum > 0)
 	{
-		result = 1;//????????????
+		result = sqrt((float)firstNum);;
+		std::cout << "Pierwiastek z tej liczy = " << result << '\n';
 	}
 	else
-		std::cout << "Nie podales liczby dodatniej";
+		std::cout << "Nie podales liczby dodatniej\n";
 }
 
 //Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
@@ -388,15 +395,30 @@ void task14()
 //Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
 void task15()
 {
+	int num, result;
 
+	std::cout << "Podaj liczbe calkowita: ";
+	std::cin >> num;
+
+	if (num > 0)
+	{
+		result = num;
+		std::cout << "Wartosc bezwzgledna = " << result << "\n";
+	}
+	else
+	{
+		result = num * -1;
+		std::cout << "Wartosc bezwzgledna = " << result << "\n";
+	}
 }
 
 
 int main()
 {
+
 	setlocale(LC_CTYPE, "polish");
 
-	task13();
+	task1();
 }
 
 /*
