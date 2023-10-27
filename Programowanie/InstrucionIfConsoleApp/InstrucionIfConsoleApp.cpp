@@ -149,29 +149,57 @@ void task6()
 // Napisz program, który poprosi u¿ytkownika o podanie liczby od 1 do 7 i wyœwietli odpowiadaj¹cy mu dzieñ tygodnia.
 void task7()
 {
-	int number;
+	int day;
 	std::cout << "Podaj liczbe od 1 do 7: ";
-	std::cin >> number;
+	std::cin >> day;
 
-	if (number >= 1 && number <= 7)
+	if (day >= 1 && day <= 7)
 	{
-		if (number == 1)
+		if (day == 1)
 			std::cout << "Poniedzialek\n";
-		if (number == 2)
+		if (day == 2)
 			std::cout << "Wtorek\n";
-		if (number == 3)
+		if (day == 3)
 			std::cout << "Sroda\n";
-		if (number == 4)
+		if (day == 4)
 			std::cout << "Czwartek\n";
-		if (number == 5)
+		if (day == 5)
 			std::cout << "Piatek\n";
-		if (number == 6)
+		if (day == 6)
 			std::cout << "Sobota\n";
-		if (number == 7)
+		if (day == 7)
 			std::cout << "Niedziela\n";
 	}
 	else
 		std::cout << "Nie podales liczby od 1 do 7\n";
+
+	switch (day)
+	{
+	case 1:
+		std::cout << "Podniedzia³ek\n";
+		break;
+	case 2:
+		std::cout << "Wtorek\n";
+		break;
+	case 3:
+		std::cout << "Œroda\n";
+		break;
+	case 4:
+		std::cout << "Czwartek\n";
+		break;
+	case 5:
+		std::cout << "Pi¹tek\n";
+		break;
+	case 6:
+		std::cout << "Sobota\n";
+		break;
+	case 0:
+	case 7:
+		std::cout << "Niedziela\n";
+		break;
+	default:
+		std::cout << "Dzieñ niepoprawny\n";
+	}
 }
 
 //Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i wyœwietli wiêksz¹ z nich.
@@ -444,5 +472,7 @@ Operatory warunkowe:
 */
 
 /*
-*.
+DRY - don't repeat yourself - nie powtarzaj siê
+
+
 */
