@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 if", "02 if", "{68543FF1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InstrucionIfConsoleApp", "InstrucionIfConsoleApp\InstrucionIfConsoleApp.vcxproj", "{5795C688-654B-46BE-BAD3-A3F0DB1874EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopDoWhileConsoleApplication", "LoopConsoleApplication\LoopConsoleApplication.vcxproj", "{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -45,6 +47,14 @@ Global
 		{5795C688-654B-46BE-BAD3-A3F0DB1874EF}.Release|x64.Build.0 = Release|x64
 		{5795C688-654B-46BE-BAD3-A3F0DB1874EF}.Release|x86.ActiveCfg = Release|Win32
 		{5795C688-654B-46BE-BAD3-A3F0DB1874EF}.Release|x86.Build.0 = Release|Win32
+		{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}.Debug|x64.ActiveCfg = Debug|x64
+		{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}.Debug|x64.Build.0 = Debug|x64
+		{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}.Debug|x86.ActiveCfg = Debug|Win32
+		{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}.Debug|x86.Build.0 = Debug|Win32
+		{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}.Release|x64.ActiveCfg = Release|x64
+		{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}.Release|x64.Build.0 = Release|x64
+		{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}.Release|x86.ActiveCfg = Release|Win32
+		{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +63,7 @@ Global
 		{BCAF686B-FBF2-4760-8368-0567DC921AB8} = {CB7E1B3D-E538-4CB3-B406-760D702F1072}
 		{23239D39-1E07-4DB2-8FF2-E572740AC57C} = {CB7E1B3D-E538-4CB3-B406-760D702F1072}
 		{5795C688-654B-46BE-BAD3-A3F0DB1874EF} = {68543FF1-D100-4D0E-9540-42CD69F84F09}
+		{5FE86DC1-3EE2-4AD1-AA30-917563CA1251} = {68543FF1-D100-4D0E-9540-42CD69F84F09}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC52CA19-2E71-4B24-A22D-395CD0BC76FD}
