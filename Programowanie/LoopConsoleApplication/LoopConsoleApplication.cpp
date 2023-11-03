@@ -16,8 +16,13 @@ void task1()
 	std::cout << "Liczba dodatnia pobrana od uzytkownika " << number << "\n";
 }
 
+//Napisz program który losuje liczbe i trzeba ja zgadnac.
+void task2()
+{
+	int numberFromUser, 
+}
 
 int main()
 {
-	task1();
+	task2();
 }
