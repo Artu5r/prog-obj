@@ -82,7 +82,9 @@ void task3()
 
 	do
 	{
-		currentNumber = currentNumber + 1;
+		currentNumber++;
+		//++currentNumber;
+		//currentNumber = currentNumber + 1;
 		std::cout << currentNumber << "\n";
 
 	} while (upperRange > currentNumber);
