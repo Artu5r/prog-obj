@@ -75,7 +75,7 @@ void task3()
 	}
 	*/
 
-	long long upperRange, currentNumber = 0;
+	unsigned long long upperRange, currentNumber = 0;
 
 	std::cout << "Podaj liczbe > 1: ";
 	std::cin >> upperRange;
@@ -90,7 +90,20 @@ void task3()
 	} while (upperRange > currentNumber);
 }
 
+//Prog który policzy sume cyfr podanej przez u¿ytkownika
+void task4()
+{
+	int number, rest, sum = 0;
+
+	std::cout << "Podaj liczbe: ";
+	std::cin >> number;
+
+	rest = number % 10;
+	sum = sum + rest;
+	number = number / 10;
+}
+
 int main()
 {
-	task3();
+	task4();
 }
