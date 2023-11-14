@@ -98,12 +98,38 @@ void task4()
 	std::cout << "Podaj liczbe: ";
 	std::cin >> number;
 
-	rest = number % 10;
-	sum = sum + rest;
-	number = number / 10;
+	do
+	{
+		rest = number % 10;
+		sum = sum + rest;
+		number = number / 10;
+	} while (number != 0);
+
+	std::cout << "Suma " << sum << "\n";
+}
+
+//Popros urzytkownika o podawanie liczb , az nie wprowadzi 0.
+//Oblicz srednia oraz sume wprowadzonych liczb.
+void task5()
+{
+	float number, sum = 0;
+	float average;
+	int i = 0;
+
+	do
+	{
+		std::cout << "Podaj liczbe: ";
+		std::cin >> number;
+		i++;
+		sum = sum + number;
+		average = (average + number) / i;
+		std::cout << "Suma = " << sum << "\n";
+		std::cout << "Srednia = " << average << "\n";
+
+	} while (number != 0);
 }
 
 int main()
 {
-	task4();
+	task5();
 }
