@@ -112,7 +112,7 @@ void task4()
 //Oblicz srednia oraz sume wprowadzonych liczb.
 void task5()
 {
-	float number, sum = 0;
+	/*float number, sum = 0;
 	float average;
 	int i = 0;
 
@@ -127,9 +127,28 @@ void task5()
 		std::cout << "Srednia = " << average << "\n";
 
 	} while (number != 0);
+	*/
+}
+
+//napisz program który pobierze od uzytkownika dowolna liczbe calkowita.
+//nastepnie program powiniem obliczyc i wyswietlic liczbe cyfr
+void task6()
+{
+	long long num, rest;
+	long long numberOfNumbers = 0;
+	std::cout << "Podaj liczbe: ";
+	std::cin >> num;
+
+	do
+	{
+		numberOfNumbers++;
+		rest = num % 10;
+		num = num / 10;
+	} while (num != 0);
+	std::cout << "Liczba liczb = " << numberOfNumbers << "\n";
 }
 
 int main()
 {
-	task5();
+	task6();
 }
