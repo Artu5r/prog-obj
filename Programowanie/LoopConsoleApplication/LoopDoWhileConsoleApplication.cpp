@@ -139,14 +139,16 @@ void task6()
 	std::cout << "Podaj liczbe: ";
 	std::cin >> num;
 
-	do
+	while (num != 0)
 	{
 		numberOfNumbers++;
 		rest = num % 10;
 		num = num / 10;
-	} while (num != 0);
+	}
 	std::cout << "Liczba liczb = " << numberOfNumbers << "\n";
 }
+
+
 
 int main()
 {

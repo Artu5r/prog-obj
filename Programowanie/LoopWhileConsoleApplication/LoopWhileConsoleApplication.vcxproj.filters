@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LoopDoWhileConsoleApplication.cpp">
+    <ClCompile Include="LoopWhileConsoleApplication.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

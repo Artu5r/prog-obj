@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5fe86dc1-3ee2-4ad1-aa30-917563ca1251}</ProjectGuid>
-    <RootNamespace>LoopConsoleApplication</RootNamespace>
+    <ProjectGuid>{e08820f5-5636-4bd9-9675-55087361cf68}</ProjectGuid>
+    <RootNamespace>LoopWhileConsoleApplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>LoopDoWhileConsoleApplication</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LoopDoWhileConsoleApplication.cpp" />
+    <ClCompile Include="LoopWhileConsoleApplication.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
