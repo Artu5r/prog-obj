@@ -26,26 +26,25 @@ void task2()
 	std::cin >> secondNumber;
 
 	int nwd;
-	nwd = firstNumber;
 
-	/*
-	while (secondNumber % nwd != 0 || firstNumber % nwd != 0)
-		nwd--;
-		*/
+	nwd = (firstNumber < secondNumber) ? firstNumber : secondNumber;
 
-	if (firstNumber < secondNumber)
-	{
+	//wersja 1
+	/*if (firstNumber < secondNumber)
 		nwd = firstNumber;
-	}
 	else
-	{
 		nwd = secondNumber;
-	}
 
 
-	nwd = (firstNumber , secondNumber) ? 5 : 7;
+	while (secondNumber % nwd != 0
+		|| firstNumber % nwd != 0)
+		nwd--;
 
-	std::cout << "NWD = " << nwd;
+	std::cout << "NWD = " << nwd;*/
+
+	//wersja 2
+
+
 }
 
 int main()
