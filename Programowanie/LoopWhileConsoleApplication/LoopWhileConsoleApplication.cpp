@@ -80,6 +80,70 @@ void task2()
 //sprawdzenie czy liczba jest palindromem.
 void task3()
 {
+	int number;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> number;
+
+	//wersja 1
+
+	/* //obliczam iloœæ cyfr
+	int tmpNumber = number;
+	int numberOfDigit = 1;
+	while (tmpNumber >= 10)
+	{
+		numberOfDigit++;
+		tmpNumber = tmpNumber / 10;
+	}
+
+	//liczê 10 do potêgi (numberOfDigit - 1)
+	int leftDivided = 1;
+	while (numberOfDigit != 1)
+	{
+		leftDivided *= 10;
+		numberOfDigit--;
+	}
+
+	int rightDivided = 10;
+	int leftNumber = number;
+	int rightNumber = number;
+
+	bool isPalindrome = true;
+	while (leftNumber > 10)
+	{
+		int leftDigit = leftNumber / leftDivided;
+		int rightDigit = rightNumber % rightDivided;
+		if (leftDigit != rightDigit)
+		{
+			isPalindrome = false;
+			break;
+		}
+
+		leftNumber = leftNumber % leftDivided;
+		rightNumber = rightNumber / rightDivided;
+
+		leftDivided = leftDivided / 10;
+	}
+
+	if (isPalindrome /*== true*//*)
+		std::cout << "Liczba jest palindromem\n";
+	else
+		std::cout << "Liczba nie jest palindromem\n";*/
+
+	//wersja 2
+
+	int reverseNumber = 0;
+	int tmpNumber = number;
+	do
+	{
+		int rest = tmpNumber % 10;
+		reverseNumber == reverseNumber * 10 + rest;
+		tmpNumber = tmpNumber / 10;
+	} while (tmpNumber > 0);
+
+	if (number == reverseNumber)
+		std::cout << "Liczba jest palindromem\n";
+	else
+		std::cout << "Liczba nie jest palindromem\n";
 
 }
 
