@@ -129,7 +129,7 @@ void task3()
 	else
 		std::cout << "Liczba nie jest palindromem\n";*/
 
-	//wersja 2
+		//wersja 2
 
 	int reverseNumber = 0;
 	int tmpNumber = number;
@@ -144,10 +144,39 @@ void task3()
 		std::cout << "Liczba jest palindromem\n";
 	else
 		std::cout << "Liczba nie jest palindromem\n";
+}
 
+//Napisz program, który wyswietli "Hello World" tyle razy ile chce uzutkownik.
+void task4()
+{
+	int howManyTimes;
+	std::cout << "Ile razy wypisac Hello World: ";
+	std::cin >> howManyTimes;
+
+	int i = 0;
+	while (i != howManyTimes)
+	{
+		std::cout << "Hello World\n";
+		i++;
+	}
+}
+
+//Napisz program, który wyswietli liczby parzyste od podanej przy urzytkownika liczby
+void task5()
+{
+	int upperRange;
+	std::cout << "Podaj gorna granice do wyswietlenia: ";
+	std::cin >> upperRange;
+
+	int i = 0;
+	while (i <= upperRange)
+	{
+		std::cout << i << "\n";
+		i += 2;
+	}
 }
 
 int main()
 {
-	task3();
+	task5();
 }
