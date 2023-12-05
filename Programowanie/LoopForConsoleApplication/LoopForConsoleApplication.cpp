@@ -62,21 +62,70 @@ void task4()
 		std::cout << "Liczba nie jest doskonala\n";
 }
 
+//Program wyświetlający na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
+void task5()
+{
+	int number, i;
+
+	for (i = 1; i < 10; i++)
+	{
+		number = i * i;
+		std::cout << number << "\n";
+	}
+}
+
+//Program wyświetlający na ekranie tabliczkę mnożenia od 1 do 9 (np. 1x1 = 1, 1x2 = 2, 1x3 = 3 itd.).
+void task6()
+{
+	int number, i;
+
+	for (i = 0; i <= 9; i++)
+	{
+		std::cout << "1x" << i << " = ";
+		number = 1 * i;
+		std::cout << number << "\n";
+	}
+}
+
+//Program wyświetlający na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
+void task7()
+{
+	int number;
+	std::cout << "Liczby podzielneprzez 3 z zakresu 1 - 100:\n";
+
+	for (int i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0)
+			std::cout << i << "\n";
+	}
+}
+
+//Program obliczający sumę kwadratów liczb od 1 do 10
+void task8()
+{
+	int number;
+	int sum = 0;
+
+	for (int i = 1; i <= 10; i++)
+	{
+		number = i * i;
+		sum = sum + number;
+	}
+	std::cout << "Suma kwadratow liczb 1 - 10 = " << sum << "\n";
+}
+
 int main()
 {
-	task4();
+	task8();
 }
 
 
 /*
-*
-* 
-* Program wyświetlający na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
-* Program obliczający n!.
+* Program obliczający n!
 * Program wyświetlający na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.)
-* Program wyświetlający na ekranie tabliczkę mnożenia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
-* Program wyświetlający na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
-* Program obliczający sumę kwadratów liczb od 1 do 10
+*
+*
+*
 * Program wyświetlający na ekranie ciąg Fibonacciego do 20 elementu (ciąg Fibonacciego to ciąg gdzie każdy element jest sumą dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
 
 * Program, kóry wyświetli poniższe cztery zwory:
