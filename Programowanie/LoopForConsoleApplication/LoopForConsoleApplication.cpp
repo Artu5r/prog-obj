@@ -134,20 +134,20 @@ void task9()
 //Program wyświetlający na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.) 4! = 1*2*3*4
 void task10()
 {
-	int number;
-	int tmpNumber;
-	int ;
+	long long tmpNumber = 0;
+	long long result = 1;
+	long long whatNumber = 0;
 
-	std::cout << "Podaj liczbe: ";
-	std::cin >> number;
-
-	for (int i = 1; i < number; i++)
+	for (int i = 1; i <= 10; i++)
 	{
-		tmpNumber++;
-		
+		whatNumber++;
+		for (int j = 1; j < whatNumber; j++)
+		{
+			tmpNumber++;
+			result = result * tmpNumber;
+		}
+		std::cout << whatNumber << "! = " << result << "\n";
 	}
-
-
 }
 
 int main()
@@ -158,11 +158,12 @@ int main()
 
 /*
 *
-* 
 *
 *
 *
-* Program wyświetlający na ekranie ciąg Fibonacciego do 20 elementu (ciąg Fibonacciego to ciąg gdzie każdy element jest sumą dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
+*
+* Program wyświetlający na ekranie ciąg Fibonacciego do 20 elementu
+(ciąg Fibonacciego to ciąg gdzie każdy element jest sumą dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
 
 * Program, kóry wyświetli poniższe cztery zwory:
 	****       54321        121212        122333
