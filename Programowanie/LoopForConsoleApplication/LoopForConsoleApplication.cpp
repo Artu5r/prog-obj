@@ -114,15 +114,51 @@ void task8()
 	std::cout << "Suma kwadratow liczb 1 - 10 = " << sum << "\n";
 }
 
+//Program obliczający n!  (4! = 1*2*3*4)
+void task9()
+{
+	int number;
+	int x = 0;
+	int result = 1;
+	std::cout << "Podaje liczbe: ";
+	std::cin >> number;
+
+	for (int i = 1; i <= number; i++)
+	{
+		x++;
+		result = result * x;
+	}
+	std::cout << "n! = " << result;
+}
+
+//Program wyświetlający na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.) 4! = 1*2*3*4
+void task10()
+{
+	int number;
+	int tmpNumber;
+	int ;
+
+	std::cout << "Podaj liczbe: ";
+	std::cin >> number;
+
+	for (int i = 1; i < number; i++)
+	{
+		tmpNumber++;
+		
+	}
+
+
+}
+
 int main()
 {
-	task8();
+	task10();
 }
 
 
 /*
-* Program obliczający n!
-* Program wyświetlający na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.)
+*
+* 
 *
 *
 *
