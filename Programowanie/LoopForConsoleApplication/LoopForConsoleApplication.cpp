@@ -134,13 +134,16 @@ void task9()
 //Program wyświetlający na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.) 4! = 1*2*3*4
 void task10()
 {
-	long long tmpNumber = 0;
-	long long result = 1;
+	long long tmpNumber;
+	long long result;
 	long long whatNumber = 0;
 
 	for (int i = 1; i <= 10; i++)
 	{
+		tmpNumber = 1;
+		result = 1;
 		whatNumber++;
+
 		for (int j = 1; j < whatNumber; j++)
 		{
 			tmpNumber++;
@@ -150,9 +153,19 @@ void task10()
 	}
 }
 
+//Program, kóry wyświetli poniższe cztery zwory:
+//	****       54321        121212        122333
+//	***        65432        212121        223334444
+//	**         76543        121212        333444455555
+//	*          87654        212121        444455555666666
+void task11()
+{
+
+}
+
 int main()
 {
-	task10();
+	task11();
 }
 
 
@@ -165,13 +178,13 @@ int main()
 * Program wyświetlający na ekranie ciąg Fibonacciego do 20 elementu
 (ciąg Fibonacciego to ciąg gdzie każdy element jest sumą dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
 
-* Program, kóry wyświetli poniższe cztery zwory:
-	****       54321        121212        122333
-	***        65432        212121        223334444
-	**         76543        121212        333444455555
-	*          87654        212121        444455555666666
+* 
 
-* Oblicz sumę szeregu 1/1^2 + 1/2^2 + 1/3^2 + ... +1/n^2. Jeżeli się nie pomylisz, to dla odpowiednio dużej wartości n po przemnożeniu jej przez 6 i spierwiastkowaniu powinieneś otrzymać wartość liczby π (suma szeregu jest równa π2/6). Zwróć uwagę, że pierwsza wartość indeksu to 1, a nie 0. Dokładność obliczeń można sprawdzić porównując z wartością odczytaną z własności Math.PI.
+* Oblicz sumę szeregu 1/1^2 + 1/2^2 + 1/3^2 + ... +1/n^2. Jeżeli się nie pomylisz,
+to dla odpowiednio dużej wartości n po przemnożeniu jej przez 6 i spierwiastkowaniu 
+powinieneś otrzymać wartość liczby π (suma szeregu jest równa π2/6). Zwróć uwagę,
+że pierwsza wartość indeksu to 1, a nie 0. Dokładność obliczeń można sprawdzić porównując
+z wartością odczytaną z własności Math.PI.
 
 * Rozkład liczby na czynniki pierwsze
 */
