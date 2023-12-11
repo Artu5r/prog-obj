@@ -153,15 +153,56 @@ void task10()
 	}
 }
 
+//Rozkład liczby na czynniki pierwsze
+void task11()
+{
+	int numFromUser;
+	std::cout << "Podaj liczbe: ";
+	std::cin >> numFromUser;
+
+	
+}
+
 //Program, kóry wyświetli poniższe cztery zwory:
 //	****       54321        121212        122333
 //	***        65432        212121        223334444
 //	**         76543        121212        333444455555
 //	*          87654        212121        444455555666666
-void task11()
+void task12()
 {
+	int howMany = 4;
 
+	for (int i = 1; i <= 4; i++)
+	{
+		for (int j = 1; j <= howMany; j++)
+		{
+			for (int k = 1; k <= howMany; k++)
+			{
+				std::cout << "*";
+			}
+			howMany--;
+			break;
+		}
+		std::cout << "\n";
+	}
 
+	std::cout << "\n";
+	std::cout << "\n";
+
+	int howManyNumbers = 5;
+	int number1to5 = 1;
+	int number5to1 = 5;
+
+	for (int i = 1; i <= 4; i++)
+	{
+		for (int j = 1; j <= 5; j++)
+		{
+			std::cout << number5to1;
+			number5to1--;
+		}
+		std::cout << "\n";
+	
+	}
 }
 
 int main()
@@ -179,13 +220,13 @@ int main()
 * Program wyświetlający na ekranie ciąg Fibonacciego do 20 elementu
 (ciąg Fibonacciego to ciąg gdzie każdy element jest sumą dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
 
-* 
+
 
 * Oblicz sumę szeregu 1/1^2 + 1/2^2 + 1/3^2 + ... +1/n^2. Jeżeli się nie pomylisz,
-to dla odpowiednio dużej wartości n po przemnożeniu jej przez 6 i spierwiastkowaniu 
+to dla odpowiednio dużej wartości n po przemnożeniu jej przez 6 i spierwiastkowaniu
 powinieneś otrzymać wartość liczby π (suma szeregu jest równa π2/6). Zwróć uwagę,
 że pierwsza wartość indeksu to 1, a nie 0. Dokładność obliczeń można sprawdzić porównując
 z wartością odczytaną z własności Math.PI.
 
-* Rozkład liczby na czynniki pierwsze
+* 
 */
