@@ -157,10 +157,10 @@ void task10()
 void task11()
 {
 	int numFromUser;
+	int tmpNumFromUser = ;
 	std::cout << "Podaj liczbe: ";
 	std::cin >> numFromUser;
 
-	
 }
 
 //Program, kóry wyświetli poniższe cztery zwory:
