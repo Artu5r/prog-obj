@@ -153,15 +153,6 @@ void task10()
 	}
 }
 
-//Rozkład liczby na czynniki pierwsze
-void task11()
-{
-	int numFromUser;
-	int tmpNumFromUser = ;
-	std::cout << "Podaj liczbe: ";
-	std::cin >> numFromUser;
-
-}
 
 //Program, kóry wyświetli poniższe cztery zwory:
 //	****       54321        121212        122333
@@ -170,18 +161,13 @@ void task11()
 //	*          87654        212121        444455555666666
 void task12()
 {
-	int howMany = 4;
+	const int NUM_OF_LINES = 4;
 
-	for (int i = 1; i <= 4; i++)
+	for (int lineNumebr = 1; lineNumebr <= NUM_OF_LINES - lineNumebr; lineNumebr++)
 	{
-		for (int j = 1; j <= howMany; j++)
+		for (int i = 0; i < NUM_OF_LINES; i++)
 		{
-			for (int k = 1; k <= howMany; k++)
-			{
-				std::cout << "*";
-			}
-			howMany--;
-			break;
+			std::cout << "*";
 		}
 		std::cout << "\n";
 	}
@@ -189,25 +175,24 @@ void task12()
 	std::cout << "\n";
 	std::cout << "\n";
 
-	int howManyNumbers = 5;
-	int number1to5 = 1;
-	int number5to1 = 5;
-
-	for (int i = 1; i <= 4; i++)
-	{
-		for (int j = 1; j <= 5; j++)
-		{
-			std::cout << number5to1;
-			number5to1--;
-		}
-		std::cout << "\n";
 	
-	}
+}
+
+//Rozkład liczby na czynniki pierwsze
+void task11()
+{
+	int numFromUser;
+	std::cout << "Podaj liczbe: ";
+	std::cin >> numFromUser;
+	int tmpNumFromUser = numFromUser;
+
 }
 
 int main()
 {
+	task12();
 	task11();
+
 }
 
 
