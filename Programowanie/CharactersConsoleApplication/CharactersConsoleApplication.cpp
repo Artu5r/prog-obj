@@ -2,11 +2,11 @@
 #include <iostream>
 
 /*
+**Poproœ u¿ytkownika o wprowadzenie liczby ca³kowitej w systemie dziesiêtnym. Nastêpnie skonwertuj tê liczbê na system dwójkowy (binarny) i wyœwietl wynik.
 *
 *
-*
-* Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
-* Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami (czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
+* 
+* 
 * Program wyci¹gaj¹cy informacje z numeru PESEL
 * Program implementuj¹cy algorytm szyfrowania Cezara (proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).
 
@@ -141,28 +141,38 @@ void task7()
 	std::cout << "W tym ciagu jest " << numberOfVowel << " samog³osek i " << numberOfConsonant << " spó³g³osek\n";
 }
 
-//Poproœ u¿ytkownika o wprowadzenie liczby ca³kowitej w systemie dziesiêtnym.
-//Nastêpnie skonwertuj tê liczbê na system dwójkowy (binarny) i wyœwietl wynik.
+//Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem
+//(czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
 void task8()
 {
-	int numFromUser;
-	int tmpNum;
-	std::string tmpNumInBin;
-	std::string numberInBin;
-	std::cout << "Podaje liczbe: ";
-	std::cin >> numFromUser;
-	tmpNum = numFromUser;
+	std::string characterFromUser;
+	std::string reverse;
+	std::cout << "Podaj ciag znakow: ";
+	std::cin >> characterFromUser;
 
-	do
+	for (int i = characterFromUser.length(); i >= 0; i--)
 	{
-		tmpNumInBin = tmpNum % 2;
-		numberInBin = numberInBin + tmpNumInBin;
-		tmpNum / 2;
-	} while (tmpNum == 0);
+		reverse = reverse + characterFromUser[i];
+	}
 
-	std::cout << numberInBin << "\n";
+	if (characterFromUser == reverse)
+		std::cout << "Text jest palindromem\n";
+	else
+		std::cout << "Text nie jest palindromem\n";
 }
 
+//Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami
+//(czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
+void task9()
+{
+	std::string firstText;
+	std::string secoundText;
+	std::cout << "Podaj 1 ci¹g: ";
+	std::cin >> firstText;
+	std::cout << "Podaj 1 ci¹g: ";
+	std::cin >> firstText;
+
+}
 
 int main()
 {
