@@ -5,8 +5,8 @@
 **Poproœ u¿ytkownika o wprowadzenie liczby ca³kowitej w systemie dziesiêtnym. Nastêpnie skonwertuj tê liczbê na system dwójkowy (binarny) i wyœwietl wynik.
 *
 *
-* 
-* 
+*
+*
 * Program wyci¹gaj¹cy informacje z numeru PESEL
 * Program implementuj¹cy algorytm szyfrowania Cezara (proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).
 
@@ -145,12 +145,14 @@ void task7()
 //(czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
 void task8()
 {
+	int t = 0;
 	std::string characterFromUser;
 	std::string reverse;
 	std::cout << "Podaj ciag znakow: ";
 	std::cin >> characterFromUser;
 
-	for (int i = characterFromUser.length(); i >= 0; i--)
+	//wersja 1
+	/*for (int i = characterFromUser.length() - 1; i >= 0; i--)
 	{
 		reverse = reverse + characterFromUser[i];
 	}
@@ -158,7 +160,30 @@ void task8()
 	if (characterFromUser == reverse)
 		std::cout << "Text jest palindromem\n";
 	else
-		std::cout << "Text nie jest palindromem\n";
+		std::cout << "Text nie jest palindromem\n";*/
+
+	//wersja 2
+	int t = 0;
+	std::string textFromUser;
+	std::string reverse;
+	std::cout << "Podaj ciag znakow: ";
+	std::cin >> textFromUser;
+
+	bool isPalindrome = true;
+
+	for (int signFromBegining = 0, signFormEnd = textFromUser.length() - 1; signFromBegining < signFormEnd; signFromBegining++, signFormEnd--)
+	{
+		if (textFromUser[signFromBegining] != textFromUser[signFormEnd])
+		{
+			isPalindrome = false;
+			break;
+		}
+	}
+
+	if (isPalindrome)
+		std::cout << "Ten tekst jest palindromem\n";
+	else
+		std::cout << "Ten tekst nie jest palindromem\n";
 }
 
 //Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami
@@ -172,6 +197,14 @@ void task9()
 	std::cout << "Podaj 1 ci¹g: ";
 	std::cin >> firstText;
 
+	for (int i = 0; i < firstText.length(); i++)
+	{
+		for (int j = 0; j < secoundText.length(); j++)
+		{
+			if (firstText[i] == secoundText[j])
+				;
+		}
+	}
 }
 
 int main()
@@ -184,6 +217,6 @@ int main()
 /*
 Typy znakow:
 * char - 1 bajt ca³owito liczbowa <-128; 127> 'a'
-* std::string - ciag znakow "abc...123"
+* std::string - ciag znakow "abc123"
 
 */
