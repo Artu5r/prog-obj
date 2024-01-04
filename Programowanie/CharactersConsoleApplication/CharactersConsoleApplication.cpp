@@ -7,12 +7,12 @@
 *
 *
 *
-* Program wyci¹gaj¹cy informacje z numeru PESEL
-* Program implementuj¹cy algorytm szyfrowania Cezara (proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).
+*
+*
 
 * Program który na wejœciu przyjmie równanie a na wyjœciu da równanie w odwrotnej notacji polskiej ONP. Np. na wejœciu 2+3*4 na wyjœcu da 234*+
-* Program, który na wejœciu przyjmie rówanie w ONP a na wyjœciu wyœwietli wynik rówania.
-* Algorytm szyfrowania AtBash Cipher - algorytm szyfruj¹cy, w którym ka¿da litera jest zamieniana na literê z przeciwnej strony alfabetu (np. A na Z, B na Y itd.)
+* Program, który na wejœciu przyjmie  a na wyjœciu wyœwietli wynik rówania.
+* 
 */
 
 //Napisz program ktory pobierze znak
@@ -163,27 +163,27 @@ void task8()
 		std::cout << "Text nie jest palindromem\n";*/
 
 	//wersja 2
-	int t = 0;
-	std::string textFromUser;
-	std::string reverse;
-	std::cout << "Podaj ciag znakow: ";
-	std::cin >> textFromUser;
+	/*int t = 0;
+		std::string textFromUser;
+		std::string reverse;
+		std::cout << "Podaj ciag znakow: ";
+		std::cin >> textFromUser;
 
-	bool isPalindrome = true;
+		bool isPalindrome = true;
 
-	for (int signFromBegining = 0, signFormEnd = textFromUser.length() - 1; signFromBegining < signFormEnd; signFromBegining++, signFormEnd--)
-	{
-		if (textFromUser[signFromBegining] != textFromUser[signFormEnd])
+		for (int signFromBegining = 0, signFormEnd = textFromUser.length() - 1; signFromBegining < signFormEnd; signFromBegining++, signFormEnd--)
 		{
-			isPalindrome = false;
-			break;
+			if (textFromUser[signFromBegining] != textFromUser[signFormEnd])
+			{
+				isPalindrome = false;
+				break;
+			}
 		}
-	}
 
-	if (isPalindrome)
-		std::cout << "Ten tekst jest palindromem\n";
-	else
-		std::cout << "Ten tekst nie jest palindromem\n";
+		if (isPalindrome)
+			std::cout << "Ten tekst jest palindromem\n";
+		else
+			std::cout << "Ten tekst nie jest palindromem\n";*/
 }
 
 //Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami
@@ -207,11 +207,62 @@ void task9()
 	}
 }
 
+//Program implementuj¹cy algorytm szyfrowania Cezara 
+//(proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).
+void task10()
+{
+	std::string text;
+	std::cout << "Podaj ci¹g: ";
+	std::cin >> text;
+
+	for (int i = 0; i < text.length(); i++)
+	{
+		text[i] += 3;
+	}
+	std::cout << text;
+}
+
+//Program wyci¹gaj¹cy informacje z numeru PESEL
+void task11()
+{
+	std::string pesel;
+	std::string year;
+	std::string mounth;
+	std::string day;
+
+	std::cout << "Podaj pesel: ";
+	std::cin >> pesel;
+
+	if (pesel.length() == 11)
+	{
+		year = pesel[0] + pesel[1];
+		mounth = pesel[2] + pesel[3];
+		day = pesel[4] + pesel[5];
+
+		std::cout << "Rok = " << year << "\n";
+		std::cout << "Miesi¹c = " << mounth << "\n";
+		std::cout << "Dzieñ = " << day << "\n";
+	}
+	
+}
+
+//Algorytm szyfrowania AtBash Cipher
+//algorytm szyfruj¹cy, w którym ka¿da litera jest zamieniana na literê z przeciwnej strony alfabetu (np. A na Z, B na Y itd.)
+void task12()
+{
+	std::string text;
+	std::cout << "Podaj text: ";
+	std::cin >> text;
+
+	
+}
+
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task8();
+	task11();
 }
 
 /*
@@ -219,4 +270,6 @@ Typy znakow:
 * char - 1 bajt ca³owito liczbowa <-128; 127> 'a'
 * std::string - ciag znakow "abc123"
 
+
+	9 11 niedokoncz
 */
