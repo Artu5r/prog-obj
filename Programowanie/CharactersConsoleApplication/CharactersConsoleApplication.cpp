@@ -186,27 +186,6 @@ void task8()
 				std::cout << "Ten tekst nie jest palindromem\n";*/
 }
 
-//Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami
-//(czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
-void task9()
-{
-	std::string firstText;
-	std::string secoundText;
-	std::cout << "Podaj 1 ci¹g: ";
-	std::cin >> firstText;
-	std::cout << "Podaj 1 ci¹g: ";
-	std::cin >> firstText;
-
-	for (int i = 0; i < firstText.length(); i++)
-	{
-		for (int j = 0; j < secoundText.length(); j++)
-		{
-			if (firstText[i] == secoundText[j])
-				;
-		}
-	}
-}
-
 //Program implementuj¹cy algorytm szyfrowania Cezara 
 //(proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).
 void task10()
@@ -248,15 +227,43 @@ void task11()
 	}
 }
 
+//Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami
+//(czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
+void task9()
+{
+	std::string firstText;
+	std::string secoundText;
+	std::cout << "Podaj 1 ci¹g: ";
+	std::cin >> firstText;
+	std::cout << "Podaj 1 ci¹g: ";
+	std::cin >> firstText;
+
+	for (int i = 0; i < firstText.length(); i++)
+	{
+		for (int j = 0; j < secoundText.length(); j++)
+		{
+			if (firstText[i] == secoundText[j])
+				;
+		}
+	}
+}
+
 //Algorytm szyfrowania AtBash Cipher
 //algorytm szyfruj¹cy, w którym ka¿da litera jest zamieniana na literê z przeciwnej strony alfabetu (np. A na Z, B na Y itd.)
 void task12()
 {
 	std::string text;
+	std::string textCrypted = "";
+	char tmp;
 	std::cout << "Podaj text: ";
 	std::cin >> text;
 
-
+	for (int i = 0; i < text.length(); i++)
+	{
+		tmp = text[i];
+		textCrypted = textCrypted + tmp;
+	}
+	std::cout << textCrypted;
 }
 
 
@@ -264,7 +271,7 @@ int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task11();
+	task12();
 }
 
 /*
