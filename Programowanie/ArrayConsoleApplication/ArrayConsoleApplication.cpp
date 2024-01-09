@@ -19,7 +19,17 @@ void task1()
 	std::cout << "\n";
 }
 
-//
+//Napisz program obliczaj¹cy œredni¹ arytmetyczn¹ elemêtów w tablicy liczb ca³kowitych
+void task2()
+{
+	const unsigned short ARRAY_SIZE = 5;
+	int numbers[ARRAY_SIZE];
+
+	const unsigned short LOWER_RANGE = 5;
+	const unsigned short UPPER_RANGE = 7;
+
+
+}
 
 int main()
 {
