@@ -1,3 +1,4 @@
+//01100001 01110010 01110100 01110101 01110010 01101011
 #include <iostream>
 
 //Napisz program który wczyta np. 5 liczb i wyswietli je w odwrotnej kolejnoœci.
@@ -91,7 +92,7 @@ void task4()
 	const long long UPPER_RANGE = 70;
 
 	//wersja 1
-
+	/*
 	for (long long numberToCheck = 2; numberToCheck <= UPPER_RANGE; numberToCheck++)
 	{
 		bool isPrime = true;
@@ -104,32 +105,55 @@ void task4()
 			}
 		}
 
-		if (isPrime /*== true*/)
+		if (isPrime)
 			std::cout << numberToCheck << ", ";
 	}
 	std::cout << "Gotowe\n";
+	*/
 
 	//wersja 2
-	long long sieveToErastosthenes[UPPER_RANGE + 1];
+	bool sieveOfEratosthenes[UPPER_RANGE + 1];
 
-	for (long long  i = 0; i < length; i++)
+	for (unsigned long long i = 2; i <= UPPER_RANGE; i++)
 	{
-
+		sieveOfEratosthenes[i] = true;
 	}
 
-	for (int number = 2; number <= UPPER_RANGE; number++)
+	for (unsigned long long number = 2; number <= UPPER_RANGE; number++)
 	{
-		if (number  nie wykreslony)
+		if (sieveOfEratosthenes[number] /*== true*/)
 		{
-			for(int numberToCrossOut = number + number; numberToCrossOut <= UPPER_RANGE; numberToCrossOut++)
-
+			for (long long numberToCrossOut = number + number; numberToCrossOut <= UPPER_RANGE; numberToCrossOut = numberToCrossOut + number)
+				sieveOfEratosthenes[numberToCrossOut] = false;
 		}
 	}
+
+	for (unsigned long long i = 2; i <= UPPER_RANGE; i++)
+	{
+		if (sieveOfEratosthenes[i] /*== true*/)
+			std::cout << i << ", ";
+	}
+	std::cout << "\n";
+}
+
+//Napisz program, który wczyta numer dnia tygodnia a nastêpnie wyœwietli nazwê tego dnia lub komunikat b³êdu.
+void task5()
+{
+	int numberOfWeek;
+	std::cout << "Podaj numer: ";
+	std::cin >> numberOfWeek;
+
+	std::string dayName[] = { "POniedzia³ek", "Wtorek", "Œroda", "Czwartek", "Pi¹tek", "Sobota", "Niedziela" };
+
+	if (numberOfWeek >= 0 && numberOfWeek = 6)
+		std::cout << "Dzieñ to " << dayName[numberOfWeek] << std::endl;
+	else
+		std::cout << "Nieprawidlowy nr dnia \n";
 }
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task4();
+	task5();
 }
