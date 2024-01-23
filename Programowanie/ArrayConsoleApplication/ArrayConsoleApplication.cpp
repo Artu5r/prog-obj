@@ -145,15 +145,55 @@ void task5()
 
 	std::string dayName[] = { "POniedzia³ek", "Wtorek", "Œroda", "Czwartek", "Pi¹tek", "Sobota", "Niedziela" };
 
-	if (numberOfWeek >= 0 && numberOfWeek = 6)
+	//if (numberOfWeek >= 0 && numberOfWeek = 6)
 		std::cout << "Dzieñ to " << dayName[numberOfWeek] << std::endl;
-	else
+	//else
 		std::cout << "Nieprawidlowy nr dnia \n";
+}
+
+//Napisz program, który
+void task6()
+{
+	const short LOWER_RANGE = 0;
+	const short UPPER_RANGE = 70;
+
+	const unsigned short ARRAY_SIZE = 10;
+	int numbers[ARRAY_SIZE];
+
+	//losowanie liczb
+	srand(time(NULL));
+	std::cout << "Wylosowane liczby: \n";
+	for (int i = 0; i < ARRAY_SIZE; i++)
+	{
+		numbers[i] = rand() % (UPPER_RANGE - LOWER_RANGE + 1) + LOWER_RANGE;
+		std::cout << numbers[i] << ", ";
+	}
+
+	//sortowanie
+	for (int i = 0; i < ARRAY_SIZE - 1; i++)
+	{
+		int minIndex = i;
+		for (int j = i + 1; j < ARRAY_SIZE; j++)
+		{
+			if (numbers[j] < numbers[minIndex])
+				minIndex = j;
+		}
+		int tmp = numbers[minIndex];
+		numbers[minIndex] = numbers[i];
+		numbers[i] = tmp;
+	}
+
+	std::cout << "\nPostrtowane liczby to:\n";
+	for (int i = 0; i < ARRAY_SIZE; i++)
+	{
+		std::cout << numbers[i] << ", ";
+	}
+	std::cout << std::endl;
 }
 
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task5();
+	task6();
 }
