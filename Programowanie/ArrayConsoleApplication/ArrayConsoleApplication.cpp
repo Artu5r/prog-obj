@@ -151,7 +151,7 @@ void task5()
 	std::cout << "Nieprawidlowy nr dnia \n";
 }
 
-//Napisz program, który porsortuje tablice liczb sposobem
+//Napisz program, który porsortuje tablice liczb sposobem przez wybór.
 void task6()
 {
 	const short LOWER_RANGE = 0;
@@ -191,7 +191,7 @@ void task6()
 	std::cout << std::endl;
 }
 
-//Napisz program, który porsortuje tablice liczb sposobem
+//Napisz program, który porsortuje tablice liczb sposobem przez wstawianie
 void task7()
 {
 	const short LOWER_RANGE = 0;
