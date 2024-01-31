@@ -36,15 +36,63 @@ void task3(std::string name, int age)
 		std::cout << "jest pe³noletni\n";
 }
 
+//Napisz program, który przetestuje zachowanie siê przekazywanych danych przez parametr.
+void task4(int number)
+{
+	std::cout << "Zmienna number w funkcji task4: " << number << "\n";
+	number--;
+	std::cout << "Zmienna number w funkcji task4: " << number << "\n";
+}
+
+//Napisz program, który wykorzysta przekazywanie parametru przez referencje.
+void task5(int& number)
+{
+	std::cout << "Zmienna number w funkcji task5: " << number << "\n";
+	number--;
+	std::cout << "Zmienna number w funkcji task5: " << number << "\n";
+}
+
+//Napisz funkcje, która pobierze od u¿ytkownika liczbê.
+void task6_GetNumber(int& number)
+{
+	std::cout << "Podaj liczbe: ";
+	std::cin >> number;
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	/*task1();
+	/*
+	task1();
+
 	task2("Witaj œwiecie!");
 	std::string text = "Uczyæ siê programowania!";
-	task2(text);*/
+	task2(text);
 
 	task3("Jan", 11);
 	task3("Ala", 19);
+
+	int number = 5;
+	std::cout << "Zmienna number w funkcji main: " << number << "\n";
+	task4(number);
+	std::cout << "Zmienna number w funkcji main: " << number << "\n";
+	task4(9);
+	const int NUMBER = 9;
+	task4(NUMBER);
+
+	int number = 5;
+	const int NUMBER = 9;
+	std::cout << "Zmienna number w funkcji main: " << number << "\n";
+	task5(number);
+	std::cout << "Zmienna number w funkcji main: " << number << "\n";
+	//task5(9); //B³¹d - przez parametr mo¿na przekazaæ tylko zmienn¹.
+	//task5(NUMBER); //B³¹d - przez parametr mo¿na przekazaæ tylko zmienn¹.
+	
+	int numberFromUser = 5;
+	task6_GetNumber(numberFromUser);
+	std::cout << "U¿ytkownik podaj liczbe " << numberFromUser << "\n";
+	*/
+
+
 }
