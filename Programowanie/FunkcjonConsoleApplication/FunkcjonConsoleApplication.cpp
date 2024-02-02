@@ -1,3 +1,4 @@
+//01100001 01110010 01110100 01110101 01110010 01101011
 #include <iostream>
 
 /*
@@ -11,7 +12,6 @@ Budowa funkcji:
 
 Nag³ówek:
 	typ_zwracanej_danej nazwa_funkcji(parametr)
-
 */
 
 //Napisz funkcje która wyœwietli na konsoli "Hello World!"
@@ -59,6 +59,13 @@ void task6_GetNumber(int& number)
 	std::cin >> number;
 }
 
+int sumOfNumbers(int fn, int sn)
+{
+	int s;
+	s = fn + sn;
+	return s;
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
@@ -92,7 +99,11 @@ int main()
 	int numberFromUser = 5;
 	task6_GetNumber(numberFromUser);
 	std::cout << "U¿ytkownik podaj liczbe " << numberFromUser << "\n";
+	
+	int firstNumber, secoundNumber, sum;
+	firstNumber = 9;
+	secoundNumber = 1;
+	sum = sumOfNumbers(firstNumber, secoundNumber);
+	std::cout << sum << "\n";
 	*/
-
-
 }
