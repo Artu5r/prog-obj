@@ -66,6 +66,35 @@ int sumOfNumbers(int fn, int sn)
 	return s;
 }
 
+//Napisz, funkcje która obliczy wartoœæ œilni i j¹ zwróci.
+long long calculateFactorial(long long n)
+{
+	long long factorial = 1;
+	for (int i = 2; i <= n; i++)
+	{
+		factorial = factorial * i;
+	}
+	return factorial;
+}
+
+long long calculateFactorialV2(long long n)
+{
+	if (n <= 1)
+		return 1;
+	else
+		return n * calculateFactorialV2(n - 1);
+}
+
+void task7()
+{
+	int number;
+	std::cout << "Podaj liczbe: ";
+	std::cin >> number;
+
+	long long factorial = calculateFactorialV2(number);
+	std::cout << "Silnia jest równa " << factorial << std::endl;
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
@@ -95,15 +124,18 @@ int main()
 	std::cout << "Zmienna number w funkcji main: " << number << "\n";
 	//task5(9); //B³¹d - przez parametr mo¿na przekazaæ tylko zmienn¹.
 	//task5(NUMBER); //B³¹d - przez parametr mo¿na przekazaæ tylko zmienn¹.
-	
+
 	int numberFromUser = 5;
 	task6_GetNumber(numberFromUser);
 	std::cout << "U¿ytkownik podaj liczbe " << numberFromUser << "\n";
-	
+
 	int firstNumber, secoundNumber, sum;
 	firstNumber = 9;
 	secoundNumber = 1;
 	sum = sumOfNumbers(firstNumber, secoundNumber);
 	std::cout << sum << "\n";
+
+	task7();
 	*/
+
 }
