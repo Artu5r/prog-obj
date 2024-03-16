@@ -208,7 +208,6 @@ void task1()
 }
 
 //Zad2
-
 void showMenuTemperature()
 {
 	system("cls");
@@ -220,7 +219,7 @@ void showMenuTemperature()
 	std::cout << "0. Koniec programu\n";
 }
 
-float conversion(float value , int whatUnit)
+void conversion(float value , int whatUnit)
 {
 	float valueInCelsiusz;
 	float valueInFahrenheit;
@@ -229,28 +228,29 @@ float conversion(float value , int whatUnit)
 	{
 		valueInFahrenheit = (value * 1.8) + 32;
 		valueInKelvin = value + 273.15;
-		return valueInFahrenheit, valueInKelvin;
+
+		std::cout << "Przeliczona temperatura: \n";
+		std::cout << "Fahrenheit: " << valueInFahrenheit << "°F\n";
+		std::cout << "Kelvin: " << valueInKelvin <<"K\n";
 	}
 	else if (whatUnit == 2)
 	{
 		valueInCelsiusz = (value - 32) / 1.8;
-		return valueInCelsiusz;
-
 		valueInKelvin = (value + 459.67) * 5 / 9;
-		return valueInKelvin;
+
+		std::cout << "Przeliczona temperatura: \n";
+		std::cout << "Celsiusz: " << valueInCelsiusz << "°C\n";
+		std::cout << "Kelvin: " << valueInKelvin << "K\n";
 	}
 	else if (whatUnit == 3)
 	{
 		valueInCelsiusz = value - 273.15;
-		return valueInCelsiusz;
-
 		valueInFahrenheit = (value - 273.15) * 1.8 + 32;
-		return valueInFahrenheit;
+
+		std::cout << "Przeliczona temperatura: \n";
+		std::cout << "Celsiusz: " << valueInCelsiusz << "°C\n";
+		std::cout << "Fahrenheit: " << valueInFahrenheit << "°F\n";
 	}
-
-
-
-
 }
 
 void task2()
@@ -285,17 +285,21 @@ void task2()
 		else
 		{
 			std::cout << "Nie ma takiej opcji\n";
+			system("pause");
 			continue;
 		}
 
-
-
-
-
+		// blad przy wartosci innej niz float dla valueBeforeConversion
+		std::cout << std::endl;
+		conversion(valueBeforeConversion, whatUnit);
+		std::cout << std::endl;
+		system("pause");
 	}
 }
 
 int main()
 {
-	task1();
+	setlocale(LC_CTYPE, "polish");
+
+	task2();
 }
