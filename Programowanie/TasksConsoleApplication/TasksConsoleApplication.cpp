@@ -219,7 +219,7 @@ void showMenuTemperature()
 	std::cout << "0. Koniec programu\n";
 }
 
-void conversion(float value , int whatUnit)
+void conversion(float value, int whatUnit)
 {
 	float valueInCelsiusz;
 	float valueInFahrenheit;
@@ -231,7 +231,7 @@ void conversion(float value , int whatUnit)
 
 		std::cout << "Przeliczona temperatura: \n";
 		std::cout << "Fahrenheit: " << valueInFahrenheit << "°F\n";
-		std::cout << "Kelvin: " << valueInKelvin <<"K\n";
+		std::cout << "Kelvin: " << valueInKelvin << "K\n";
 	}
 	else if (whatUnit == 2)
 	{
@@ -297,9 +297,71 @@ void task2()
 	}
 }
 
+//Zad3
+void showMenuCube()
+{
+	system("cls");
+	std::cout << "Symulator rzutu kostką\n";
+	std::cout << "-----------------\n";
+	std::cout << "\n";
+	std::cout << "Wybierz rodzaj kostki (6/10/20): \n";
+}
+
+void throwCube(short typeOfCube, short howManyThrows)
+{
+	srand(time(NULL));
+
+	std::cout << "Wyniki rzutów kostką 10-ścienną:\n";
+
+	short drawnNumber;
+	for (int i = 1; i < howManyThrows + 1; i++)
+	{
+		drawnNumber = rand() % (typeOfCube - 1 + 1) + 1;
+		std::cout << "Rzut " << i << ": " << drawnNumber << "\n";
+	}
+	std::cout << "\n";
+	system("pause");
+}
+
+void task3()
+{
+	while (true)
+	{
+		showMenuCube();
+
+		short typeOfCube;
+		std::cin >> typeOfCube;
+
+		std::cout << "Ile rzutów chcesz wykonać?: \n";
+
+		short howManyThrows;
+		std::cin >> howManyThrows;
+
+		if (typeOfCube == 6)
+		{
+			throwCube(typeOfCube, howManyThrows);
+		}
+		else if (typeOfCube == 10)
+		{
+			throwCube(typeOfCube, howManyThrows);
+		}
+		else if (typeOfCube == 20)
+		{
+			throwCube(typeOfCube, howManyThrows);
+		}
+		else
+		{
+			std::cout << "Zły wybór!";
+			system("pause");
+			continue;
+		}
+		break;
+	}
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task2();
+	task3();
 }
