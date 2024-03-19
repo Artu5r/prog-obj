@@ -359,9 +359,101 @@ void task3()
 	}
 }
 
+//Zad4
+void showMenuConverter()
+{
+	system("cls");
+	std::cout << "Konwerter jednostek\n";
+	std::cout << "-----------------\n";
+	std::cout << "\n";
+	std::cout << "Wybierz jednostkę wejściową:\n";
+	std::cout << "1. Metry\n";
+	std::cout << "2. Centymetry\n";
+	std::cout << "3. Cale\n";
+	std::cout << "\n";
+}
+
+double convertUnit(short fromWhichUnit, short toWhichUnit, double value)
+{
+	double valueAfterConv;
+	if (fromWhichUnit == 1)
+	{
+		if (toWhichUnit == 1)
+			return valueAfterConv = value;
+		if (toWhichUnit == 2)
+			return valueAfterConv = value * 100;
+		if (toWhichUnit == 3)
+			return valueAfterConv = value * 39.37;
+	}
+	else if (fromWhichUnit == 2)
+	{
+		if (toWhichUnit == 1)
+			return valueAfterConv = value * 0.01;
+		if (toWhichUnit == 2)
+			return valueAfterConv = value;
+		if (toWhichUnit == 3)
+			return valueAfterConv = value * 0.39;
+	}
+	else if (fromWhichUnit == 3)
+	{
+		if (toWhichUnit == 1)
+			return valueAfterConv = value * 0.01;
+		if (toWhichUnit == 2)
+			return valueAfterConv = value * 2.54;
+		if (toWhichUnit == 3)
+			return valueAfterConv = value;
+	}
+}
+
+void task4()
+{
+	while (true)
+	{
+		showMenuConverter();
+
+		short fromWhichUnit;
+		std::cout << "Wybór: ";
+		std::cin >> fromWhichUnit;
+	
+		std::cout << "Wybierz jednostkę wyjściową:\n";
+		std::cout << "1. Metry\n";
+		std::cout << "2. Centymetry\n";
+		std::cout << "3. Cale\n";
+
+		short toWhichUnit;
+		std::cout << "Wybór: ";
+		std::cin >> toWhichUnit;
+
+		std::cout << "\n";
+
+		double value;
+		std::cout << "Wartość: ";
+		std::cin >> value;
+
+		switch (fromWhichUnit, toWhichUnit)
+		{
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+
+		default:
+			std::cout << "Zły wybór!\n";
+			system("pause");
+			continue;
+		}
+
+		std::cout << "Wynik konwersji: " << convertUnit(fromWhichUnit, toWhichUnit, value) << "\n";
+		system("pause");
+		break;
+	}
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task3();
+	task4();
 }
