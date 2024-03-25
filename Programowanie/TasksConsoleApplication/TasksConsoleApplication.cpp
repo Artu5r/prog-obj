@@ -219,6 +219,35 @@ void showMenuTemperature()
 	std::cout << "0. Koniec programu\n";
 }
 
+float getValue(int whatUnit)
+{
+	float valueBeforeConversion;
+
+	if (whatUnit == 1)
+	{
+		std::cout << "Podaj temperaturę w stopniach Celsiusza: ";
+		std::cin >> valueBeforeConversion;
+	}
+	else if (whatUnit == 2)
+	{
+		std::cout << "Podaj temperaturę w stopniach Fahrenheit: ";
+		std::cin >> valueBeforeConversion;
+	}
+	else if (whatUnit == 3)
+	{
+		std::cout << "Podaj temperaturę w stopniach Kelvin: ";
+		std::cin >> valueBeforeConversion;
+	}
+	else
+	{
+		std::cout << "Nie ma takiej opcji\n";
+		system("pause");
+		continue;
+	}
+
+	return valueBeforeConversion;
+}
+
 void conversion(float value, int whatUnit)
 {
 	float valueInCelsiusz;
@@ -263,31 +292,10 @@ void task2()
 		std::cout << "Wybór: ";
 		std::cin >> whatUnit;
 
-		float valueBeforeConversion;
-
-		if (whatUnit == 1)
-		{
-			std::cout << "Podaj temperaturę w stopniach Celsiusza: ";
-			std::cin >> valueBeforeConversion;
-		}
-		else if (whatUnit == 2)
-		{
-			std::cout << "Podaj temperaturę w stopniach Fahrenheit: ";
-			std::cin >> valueBeforeConversion;
-		}
-		else if (whatUnit == 3)
-		{
-			std::cout << "Podaj temperaturę w stopniach Kelvin: ";
-			std::cin >> valueBeforeConversion;
-		}
-		else if (whatUnit == 0)
+		if (whatUnit == 0)
 			break;
-		else
-		{
-			std::cout << "Nie ma takiej opcji\n";
-			system("pause");
-			continue;
-		}
+
+		float valueBeforeConversion = getValue(whatUnit);
 
 		// blad przy wartosci innej niz float dla valueBeforeConversion
 		std::cout << std::endl;
@@ -455,5 +463,5 @@ int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task4();
+	task2();
 }
