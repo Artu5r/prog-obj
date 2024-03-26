@@ -219,6 +219,28 @@ void showMenuTemperature()
 	std::cout << "0. Koniec programu\n";
 }
 
+int getWhatUnit()
+{
+	int whatUnit;
+
+	while (true)
+	{
+		std::cin >> whatUnit;
+		if (whatUnit == 1 ||
+			whatUnit == 2 ||
+			whatUnit == 3)
+		{
+			break;
+		}
+		else
+		{
+			std::cout << "Nie ma takiej opcji\n";
+			std::cout << "Podaj ponownie: \n";
+		}
+	}
+	return whatUnit;
+}
+
 float getValue(int whatUnit)
 {
 	float valueBeforeConversion;
@@ -242,9 +264,9 @@ float getValue(int whatUnit)
 	{
 		std::cout << "Nie ma takiej opcji\n";
 		system("pause");
-		continue;
 	}
 
+	std::cout << std::endl;
 	return valueBeforeConversion;
 }
 
@@ -280,6 +302,7 @@ void conversion(float value, int whatUnit)
 		std::cout << "Celsiusz: " << valueInCelsiusz << "°C\n";
 		std::cout << "Fahrenheit: " << valueInFahrenheit << "°F\n";
 	}
+	std::cout << std::endl;
 }
 
 void task2()
@@ -288,21 +311,17 @@ void task2()
 	{
 		showMenuTemperature();
 
-		int whatUnit;
-		std::cout << "Wybór: ";
-		std::cin >> whatUnit;
+		int whatUnit = getWhatUnit();
 
 		if (whatUnit == 0)
 			break;
 
 		float valueBeforeConversion = getValue(whatUnit);
 
-		// blad przy wartosci innej niz float dla valueBeforeConversion
-		std::cout << std::endl;
 		conversion(valueBeforeConversion, whatUnit);
-		std::cout << std::endl;
+		
 		system("pause");
-
+		break;
 	}
 }
 
@@ -423,7 +442,7 @@ void task4()
 		short fromWhichUnit;
 		std::cout << "Wybór: ";
 		std::cin >> fromWhichUnit;
-	
+
 		std::cout << "Wybierz jednostkę wyjściową:\n";
 		std::cout << "1. Metry\n";
 		std::cout << "2. Centymetry\n";
