@@ -319,7 +319,7 @@ void task2()
 		float valueBeforeConversion = getValue(whatUnit);
 
 		conversion(valueBeforeConversion, whatUnit);
-		
+
 		system("pause");
 		break;
 	}
@@ -335,7 +335,7 @@ void showMenuCube()
 	std::cout << "Wybierz rodzaj kostki (6/10/20): \n";
 }
 
-void throwCube(short typeOfCube, short howManyThrows)
+void throwsCube(short typeOfCube, short howManyThrows)
 {
 	srand(time(NULL));
 
@@ -345,7 +345,7 @@ void throwCube(short typeOfCube, short howManyThrows)
 	for (int i = 1; i < howManyThrows + 1; i++)
 	{
 		drawnNumber = rand() % (typeOfCube - 1 + 1) + 1;
-		std::cout << "Rzut " << i << ": " << drawnNumber << "\n";
+		std::cout << i << ". Rzut " << i << ": " << drawnNumber << "\n";
 	}
 	std::cout << "\n";
 	system("pause");
@@ -365,17 +365,11 @@ void task3()
 		short howManyThrows;
 		std::cin >> howManyThrows;
 
-		if (typeOfCube == 6)
+		if (typeOfCube == 6 ||
+			typeOfCube == 10 ||
+			typeOfCube == 20)
 		{
-			throwCube(typeOfCube, howManyThrows);
-		}
-		else if (typeOfCube == 10)
-		{
-			throwCube(typeOfCube, howManyThrows);
-		}
-		else if (typeOfCube == 20)
-		{
-			throwCube(typeOfCube, howManyThrows);
+			throwsCube(typeOfCube, howManyThrows);
 		}
 		else
 		{
@@ -399,6 +393,32 @@ void showMenuConverter()
 	std::cout << "2. Centymetry\n";
 	std::cout << "3. Cale\n";
 	std::cout << "\n";
+}
+
+short getWhichUnit()
+{
+	int whichUnit;
+	std::cout << "Wybór: ";
+
+	while (true)
+	{
+		std::cin >> whichUnit;
+
+		if (whichUnit == 1 ||
+			whichUnit == 2 ||
+			whichUnit == 3)
+		{
+			break;
+		}
+		else
+		{
+			std::cout << "Podałeś złą opcje!\n";
+			std::cout << "Wybierz ponownie: ";
+			continue;
+		}
+	}
+	std::cout << "\n";
+	return whichUnit;
 }
 
 double convertUnit(short fromWhichUnit, short toWhichUnit, double value)
@@ -439,39 +459,18 @@ void task4()
 	{
 		showMenuConverter();
 
-		short fromWhichUnit;
-		std::cout << "Wybór: ";
-		std::cin >> fromWhichUnit;
+		short fromWhichUnit = getWhichUnit();
 
 		std::cout << "Wybierz jednostkę wyjściową:\n";
 		std::cout << "1. Metry\n";
 		std::cout << "2. Centymetry\n";
 		std::cout << "3. Cale\n";
 
-		short toWhichUnit;
-		std::cout << "Wybór: ";
-		std::cin >> toWhichUnit;
+		short toWhichUnit = getWhichUnit();
 
-		std::cout << "\n";
-
-		double value;
-		std::cout << "Wartość: ";
+		float value;
+		std::cout << "Podaj wartość: ";
 		std::cin >> value;
-
-		switch (fromWhichUnit, toWhichUnit)
-		{
-		case 1:
-			break;
-		case 2:
-			break;
-		case 3:
-			break;
-
-		default:
-			std::cout << "Zły wybór!\n";
-			system("pause");
-			continue;
-		}
 
 		std::cout << "Wynik konwersji: " << convertUnit(fromWhichUnit, toWhichUnit, value) << "\n";
 		system("pause");
@@ -483,5 +482,5 @@ int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task2();
+	task4();
 }
