@@ -241,7 +241,7 @@ int getWhatUnit()
 	return whatUnit;
 }
 
-float getValue(int whatUnit)
+float getValueTemp(int whatUnit)
 {
 	float valueBeforeConversion;
 
@@ -316,7 +316,7 @@ void task2()
 		if (whatUnit == 0)
 			break;
 
-		float valueBeforeConversion = getValue(whatUnit);
+		float valueBeforeConversion = getValueTemp(whatUnit);
 
 		conversion(valueBeforeConversion, whatUnit);
 
@@ -395,6 +395,14 @@ void showMenuConverter()
 	std::cout << "\n";
 }
 
+void showMenuConverterOut()
+{
+	std::cout << "Wybierz jednostkę wyjściową:\n";
+	std::cout << "1. Metry\n";
+	std::cout << "2. Centymetry\n";
+	std::cout << "3. Cale\n";
+}
+
 short getWhichUnit()
 {
 	int whichUnit;
@@ -419,6 +427,14 @@ short getWhichUnit()
 	}
 	std::cout << "\n";
 	return whichUnit;
+}
+
+float getValue()
+{
+	float value;
+	std::cout << "Podaj wartość: ";
+	std::cin >> value;
+	return value;
 }
 
 double convertUnit(short fromWhichUnit, short toWhichUnit, double value)
@@ -461,16 +477,11 @@ void task4()
 
 		short fromWhichUnit = getWhichUnit();
 
-		std::cout << "Wybierz jednostkę wyjściową:\n";
-		std::cout << "1. Metry\n";
-		std::cout << "2. Centymetry\n";
-		std::cout << "3. Cale\n";
+		showMenuConverterOut();
 
 		short toWhichUnit = getWhichUnit();
 
-		float value;
-		std::cout << "Podaj wartość: ";
-		std::cin >> value;
+		float value = getValue();
 
 		std::cout << "Wynik konwersji: " << convertUnit(fromWhichUnit, toWhichUnit, value) << "\n";
 		system("pause");
