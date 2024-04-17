@@ -1,11 +1,11 @@
-﻿﻿#include <iostream>
+﻿#include <iostream>
 #include <windows.h>
 #include <conio.h>
 
 enum keyCode
 {
 	UP,
-	DOWN = 5,
+	DOWN,
 	LEFT,
 	RIGHT,
 	ESC
@@ -39,15 +39,15 @@ void getConsolResolution(int& consoleWidth, int& consoleHeight)
 	consoleHeight = csbi.srWindow.Bottom - csbi.srWindow.Top;
 }
 
-keyCode codeChar(char charToCode)
+keyCode codeChar(unsigned char charToCode)
 {
-	if (charToCode == 'w')
+	if (charToCode == 'w' || charToCode == 72)
 		return keyCode::UP;
-	if (charToCode == 's')
+	if (charToCode == 's' || charToCode == 80)
 		return keyCode::DOWN;
-	if (charToCode == 'a')
+	if (charToCode == 'a' || charToCode == 75)
 		return keyCode::LEFT;
-	if (charToCode == 'd')
+	if (charToCode == 'd' || charToCode == 77)
 		return keyCode::RIGHT;
 	if (charToCode == 27)
 		return keyCode::ESC;
@@ -55,23 +55,43 @@ keyCode codeChar(char charToCode)
 
 keyCode getKeyCode(keyCode prevKeyCode)
 {
-	char currentChar = 0;
+	unsigned char currentChar = 0;
 	keyCode currentKeyCode = prevKeyCode;
 	if (_kbhit())
+	{
 		currentChar = _getch();
-
-	if (currentChar == 'w'
-		|| currentChar == 's'
-		|| currentChar == 'a'
-		|| currentChar == 'd'
-		|| currentChar == 27)
-		currentKeyCode = codeChar(currentChar);
-
+		if (currentChar == 224 || currentChar == 0)
+		{
+			currentChar = _getch();
+			if (currentChar == 72
+				|| currentChar == 80
+				|| currentChar == 75
+				|| currentChar == 77
+				|| currentChar == 27)
+				currentKeyCode = codeChar(currentChar);
+		}
+		else if (currentChar == 'w'
+			|| currentChar == 's'
+			|| currentChar == 'a'
+			|| currentChar == 'd'
+			|| currentChar == 27)
+			currentKeyCode = codeChar(currentChar);
+	}
 	return currentKeyCode;
 }
 
 int main()
 {
+	/*unsigned char sign;
+
+	while (true)
+	{
+		sign = _getch();
+		std::cout << (int)sign << "\n";
+	}
+
+	return 0;*/
+
 	/*std::string password = "";
 	char characterFromUser;
 
@@ -145,7 +165,6 @@ int main()
 		if (currentKeyCode == keyCode::ESC)
 			break;
 	}
-
 
 	//setCursor(5, 7);
 	//std::cout << "Hello World!\n";
