@@ -1,5 +1,7 @@
 ﻿#include <iostream>
 #include <string>
+#include <windows.h>
+#include <conio.h>
 
 /*
 Zadanie: Tworzenie prostego kalkulatora
@@ -124,6 +126,8 @@ Podaj wartość do konwersji: 5
 Wynik konwersji: 500 centymetrów
 
 */
+
+/* ZAD5 Pojawianie * w losowym miejscu w konsoli*/
 
 //Zad 1
 void showMenu()
@@ -489,9 +493,75 @@ void task4()
 	}
 }
 
+//zad5
+void getConsolResolution(int& consoleWidth, int& consoleHeight)
+{
+	CONSOLE_SCREEN_BUFFER_INFO csbi;
+	GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
+
+	consoleWidth = csbi.srWindow.Right - csbi.srWindow.Left;
+	consoleHeight = csbi.srWindow.Bottom - csbi.srWindow.Top;
+}
+
+void setCursor(int x, int y)
+{
+	COORD c;
+	c.X = x;
+	c.Y = y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), c);
+}
+
+void drowSky(int consoleWidth, int consoleHeight)
+{
+	for (int i = 0; i < 20; i++)
+	{
+		int x = rand() % (consoleWidth - 1 + 1) + 1;
+		int y = rand() % (consoleHeight - 1 + 1) + 1;
+		setCursor(x, y);
+		std::cout << "*";
+		Sleep(100);
+		x = rand() % (consoleWidth - 1 + 1) + 1;
+		y = rand() % (consoleHeight - 1 + 1) + 1;
+		setCursor(x, y);
+		std::cout << "*";
+	}
+}
+
+void clearSky(int consoleWidth, int consoleHeight)
+{
+	for (int i = 0; i < 10; i++)
+	{
+		int x = rand() % (consoleWidth - 1 + 1) + 1;
+		int y = rand() % (consoleHeight - 1 + 1) + 1;
+		setCursor(x, y);
+		std::cout << " ";
+		Sleep(100);
+		x = rand() % (consoleWidth - 1 + 1) + 1;
+		y = rand() % (consoleHeight - 1 + 1) + 1;
+		setCursor(x, y);
+		std::cout << " ";
+	}
+}
+
+void task5()
+{
+	srand(time(NULL));
+	int consoleWidth = 0;
+	int consoleHeight = 0;
+	getConsolResolution(consoleWidth, consoleHeight);
+
+	while (true)
+	{
+		drowSky(consoleWidth, consoleWidth);
+		Sleep(500);
+		clearSky(consoleWidth, consoleWidth);
+	}
+
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "polish");
 
-	task4();
+	task5();
 }
