@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TasksConsoleApplication", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnakeConsoleApplication", "SnakeConsoleApplication\SnakeConsoleApplication.vcxproj", "{7A08C50D-2C19-4D91-A328-4785C46866D0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task2ConsoleApplication", "Task2ConsoleApplication\Task2ConsoleApplication.vcxproj", "{ABABB46A-71C7-49D4-ADEF-3F835055E2AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -143,6 +145,14 @@ Global
 		{7A08C50D-2C19-4D91-A328-4785C46866D0}.Release|x64.Build.0 = Release|x64
 		{7A08C50D-2C19-4D91-A328-4785C46866D0}.Release|x86.ActiveCfg = Release|Win32
 		{7A08C50D-2C19-4D91-A328-4785C46866D0}.Release|x86.Build.0 = Release|Win32
+		{ABABB46A-71C7-49D4-ADEF-3F835055E2AD}.Debug|x64.ActiveCfg = Debug|x64
+		{ABABB46A-71C7-49D4-ADEF-3F835055E2AD}.Debug|x64.Build.0 = Debug|x64
+		{ABABB46A-71C7-49D4-ADEF-3F835055E2AD}.Debug|x86.ActiveCfg = Debug|Win32
+		{ABABB46A-71C7-49D4-ADEF-3F835055E2AD}.Debug|x86.Build.0 = Debug|Win32
+		{ABABB46A-71C7-49D4-ADEF-3F835055E2AD}.Release|x64.ActiveCfg = Release|x64
+		{ABABB46A-71C7-49D4-ADEF-3F835055E2AD}.Release|x64.Build.0 = Release|x64
+		{ABABB46A-71C7-49D4-ADEF-3F835055E2AD}.Release|x86.ActiveCfg = Release|Win32
+		{ABABB46A-71C7-49D4-ADEF-3F835055E2AD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +170,7 @@ Global
 		{AEA86744-B540-4712-BED4-0464DCB32EC5} = {B503E695-DAD0-4C46-92AE-E70BFC482DE8}
 		{5BBD9C3E-D1F3-4989-9C77-403A5B23D0F6} = {70EE02C0-D611-438E-A8D9-D4F253C7DEE7}
 		{7A08C50D-2C19-4D91-A328-4785C46866D0} = {70EE02C0-D611-438E-A8D9-D4F253C7DEE7}
+		{ABABB46A-71C7-49D4-ADEF-3F835055E2AD} = {70EE02C0-D611-438E-A8D9-D4F253C7DEE7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC52CA19-2E71-4B24-A22D-395CD0BC76FD}
