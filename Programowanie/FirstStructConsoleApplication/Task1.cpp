@@ -1,6 +1,6 @@
 #include <iostream>
 
-//  Napisz program który obliczy odlegloœæ punktu 2D od œrodka uk³adu wspó³rzêdnych.
+//Napisz program który obliczy odlegloœæ punktu 2D od œrodka uk³adu wspó³rzêdnych.
 void task1()
 {
 	double x, y;
