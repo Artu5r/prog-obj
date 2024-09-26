@@ -1,8 +1,7 @@
 #include <iostream>
-#include "Task1.cpp"
-#include "Task2.cpp"
+#include "Tasks.h"
 
 int main()
 {
-	task2();
+	task4();
 }
