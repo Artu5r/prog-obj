@@ -47,9 +47,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strukturalne", "Strukturaln
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objektowe", "Objektowe", "{42DFA183-9E09-45DA-8AEB-3FFDEF9A9BEA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Struktury", "1. Struktury", "{98D321FF-8B23-4EB3-B9A9-8583C2B8DD64}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Struktury", "01 Struktury", "{98D321FF-8B23-4EB3-B9A9-8583C2B8DD64}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstStructConsoleApplication", "FirstStructConsoleApplication\FirstStructConsoleApplication.vcxproj", "{3F90850C-B371-483A-8DAC-534A77DAFC81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Podst Obiektow", "02 Podst Obiektow", "{4E770ADE-636F-4F61-B28B-B82F6BABC5C9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstObjectConsoleApplication", "FirstObjectConsoleApplication\FirstObjectConsoleApplication.vcxproj", "{8157103A-4A0C-4323-967B-23CE9EFDFA4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +183,14 @@ Global
 		{3F90850C-B371-483A-8DAC-534A77DAFC81}.Release|x64.Build.0 = Release|x64
 		{3F90850C-B371-483A-8DAC-534A77DAFC81}.Release|x86.ActiveCfg = Release|Win32
 		{3F90850C-B371-483A-8DAC-534A77DAFC81}.Release|x86.Build.0 = Release|Win32
+		{8157103A-4A0C-4323-967B-23CE9EFDFA4A}.Debug|x64.ActiveCfg = Debug|x64
+		{8157103A-4A0C-4323-967B-23CE9EFDFA4A}.Debug|x64.Build.0 = Debug|x64
+		{8157103A-4A0C-4323-967B-23CE9EFDFA4A}.Debug|x86.ActiveCfg = Debug|Win32
+		{8157103A-4A0C-4323-967B-23CE9EFDFA4A}.Debug|x86.Build.0 = Debug|Win32
+		{8157103A-4A0C-4323-967B-23CE9EFDFA4A}.Release|x64.ActiveCfg = Release|x64
+		{8157103A-4A0C-4323-967B-23CE9EFDFA4A}.Release|x64.Build.0 = Release|x64
+		{8157103A-4A0C-4323-967B-23CE9EFDFA4A}.Release|x86.ActiveCfg = Release|Win32
+		{8157103A-4A0C-4323-967B-23CE9EFDFA4A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -206,6 +218,8 @@ Global
 		{D695CE50-3D54-4E2B-BE1C-B9E7D1E2CE89} = {70EE02C0-D611-438E-A8D9-D4F253C7DEE7}
 		{98D321FF-8B23-4EB3-B9A9-8583C2B8DD64} = {42DFA183-9E09-45DA-8AEB-3FFDEF9A9BEA}
 		{3F90850C-B371-483A-8DAC-534A77DAFC81} = {98D321FF-8B23-4EB3-B9A9-8583C2B8DD64}
+		{4E770ADE-636F-4F61-B28B-B82F6BABC5C9} = {42DFA183-9E09-45DA-8AEB-3FFDEF9A9BEA}
+		{8157103A-4A0C-4323-967B-23CE9EFDFA4A} = {4E770ADE-636F-4F61-B28B-B82F6BABC5C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC52CA19-2E71-4B24-A22D-395CD0BC76FD}
