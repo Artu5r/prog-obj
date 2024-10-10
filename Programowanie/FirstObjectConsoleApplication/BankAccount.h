@@ -13,4 +13,6 @@ public:
 	void DepositToAccount(double amount);
 
 	bool WithdrawToAccount(double amount);
+
+	void transferBetweenAccounts(BankAccount& account, BankAccount& targetAccount, double amount);
 };

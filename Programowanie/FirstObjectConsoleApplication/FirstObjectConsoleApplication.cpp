@@ -1,13 +1,6 @@
 #include <iostream>
 #include "BankAccount.h"
 
-void transferBetweenAccounts(BankAccount& sourceAccount, BankAccount& targetAccount, double amount)
-{
-	if (sourceAccount.WithdrawToAccount(amount))
-	{
-		targetAccount.DepositToAccount(amount);
-	}
-}
 
 int main()
 {
@@ -26,4 +19,5 @@ int main()
 	secoundAccount.AccountInfo();
 	secoundAccount.DepositToAccount(100);
 	secoundAccount.AccountInfo();
+	secoundAccount.transferBetweenAccounts(secoundAccount, firstAccount, 10);
 }

@@ -23,3 +23,11 @@ bool BankAccount::WithdrawToAccount(double amount)
 	}
 	return false;
 }
+
+void BankAccount::transferBetweenAccounts(BankAccount& account,BankAccount& targetAccount, double amount)
+{
+	if (account.WithdrawToAccount(amount))
+	{
+		targetAccount.DepositToAccount(amount);
+	}
+}
