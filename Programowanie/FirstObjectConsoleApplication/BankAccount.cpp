@@ -1,6 +1,16 @@
 #include <iostream>
 #include "BankAccount.h"
 
+void BankAccount::SetBalance(double b)
+{
+	if (b >=0
+		&& isSetBalance == false)
+	{
+		balance = b;
+		isSetBalance = true;
+	}
+}
+
 void BankAccount::AccountInfo()
 {
 	std::cout << "Informacje o koncie bankowym\n";

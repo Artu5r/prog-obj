@@ -3,10 +3,16 @@
 
 class BankAccount
 {
-public:
+private:
 	double balance;
 	std::string owner;
 	std::string currency;
+
+	bool isSetBalance = false;
+
+public:
+
+	void SetBalance(double b);
 
 	void AccountInfo();
 

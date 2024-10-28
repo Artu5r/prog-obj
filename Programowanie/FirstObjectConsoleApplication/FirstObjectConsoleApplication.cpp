@@ -5,8 +5,8 @@
 int main()
 {
 	BankAccount firstAccount;
-	firstAccount.balance = 7200;
-	firstAccount.owner = "Jan KOwalski";
+	firstAccount.SetBalance(7200);
+	firstAccount.owner = "Jan Kowalski";
 	firstAccount.currency = "z³";
 
 	firstAccount.AccountInfo();
