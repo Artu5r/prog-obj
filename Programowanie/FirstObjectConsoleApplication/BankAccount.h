@@ -11,6 +11,9 @@ private:
 	bool isSetBalance = false;
 
 public:
+	BankAccount();
+	BankAccount(double b, std::string o, std::string c);
+
 
 	void SetBalance(double b);
 
