@@ -59,6 +59,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReadAndToFilesConsoleApplic
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringConsoleApplication", "StringConsoleApplication\StringConsoleApplication.vcxproj", "{C8511AE2-821A-4A00-BFC8-C48477D1C8AA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InheritanceConsoleApp", "InheritanceConsoleApp\InheritanceConsoleApp.vcxproj", "{ABE44F09-11C5-42E5-8E9D-F442BB05B859}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -211,6 +213,14 @@ Global
 		{C8511AE2-821A-4A00-BFC8-C48477D1C8AA}.Release|x64.Build.0 = Release|x64
 		{C8511AE2-821A-4A00-BFC8-C48477D1C8AA}.Release|x86.ActiveCfg = Release|Win32
 		{C8511AE2-821A-4A00-BFC8-C48477D1C8AA}.Release|x86.Build.0 = Release|Win32
+		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Debug|x64.ActiveCfg = Debug|x64
+		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Debug|x64.Build.0 = Debug|x64
+		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Debug|x86.ActiveCfg = Debug|Win32
+		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Debug|x86.Build.0 = Debug|Win32
+		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Release|x64.ActiveCfg = Release|x64
+		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Release|x64.Build.0 = Release|x64
+		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Release|x86.ActiveCfg = Release|Win32
+		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -242,6 +252,7 @@ Global
 		{8157103A-4A0C-4323-967B-23CE9EFDFA4A} = {4E770ADE-636F-4F61-B28B-B82F6BABC5C9}
 		{B649C7BE-57B1-4F1C-9460-B9792ADB4CDB} = {4E770ADE-636F-4F61-B28B-B82F6BABC5C9}
 		{C8511AE2-821A-4A00-BFC8-C48477D1C8AA} = {4E770ADE-636F-4F61-B28B-B82F6BABC5C9}
+		{ABE44F09-11C5-42E5-8E9D-F442BB05B859} = {4E770ADE-636F-4F61-B28B-B82F6BABC5C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC52CA19-2E71-4B24-A22D-395CD0BC76FD}
