@@ -61,6 +61,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringConsoleApplication", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InheritanceConsoleApp", "InheritanceConsoleApp\InheritanceConsoleApp.vcxproj", "{ABE44F09-11C5-42E5-8E9D-F442BB05B859}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeometricFigureConsoleApplication", "GeometricFigureConsoleApplication\GeometricFigureConsoleApplication.vcxproj", "{796E1B2C-3E45-43E4-8C8C-ED59C914B996}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Release|x64.Build.0 = Release|x64
 		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Release|x86.ActiveCfg = Release|Win32
 		{ABE44F09-11C5-42E5-8E9D-F442BB05B859}.Release|x86.Build.0 = Release|Win32
+		{796E1B2C-3E45-43E4-8C8C-ED59C914B996}.Debug|x64.ActiveCfg = Debug|x64
+		{796E1B2C-3E45-43E4-8C8C-ED59C914B996}.Debug|x64.Build.0 = Debug|x64
+		{796E1B2C-3E45-43E4-8C8C-ED59C914B996}.Debug|x86.ActiveCfg = Debug|Win32
+		{796E1B2C-3E45-43E4-8C8C-ED59C914B996}.Debug|x86.Build.0 = Debug|Win32
+		{796E1B2C-3E45-43E4-8C8C-ED59C914B996}.Release|x64.ActiveCfg = Release|x64
+		{796E1B2C-3E45-43E4-8C8C-ED59C914B996}.Release|x64.Build.0 = Release|x64
+		{796E1B2C-3E45-43E4-8C8C-ED59C914B996}.Release|x86.ActiveCfg = Release|Win32
+		{796E1B2C-3E45-43E4-8C8C-ED59C914B996}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -253,6 +263,7 @@ Global
 		{B649C7BE-57B1-4F1C-9460-B9792ADB4CDB} = {4E770ADE-636F-4F61-B28B-B82F6BABC5C9}
 		{C8511AE2-821A-4A00-BFC8-C48477D1C8AA} = {4E770ADE-636F-4F61-B28B-B82F6BABC5C9}
 		{ABE44F09-11C5-42E5-8E9D-F442BB05B859} = {4E770ADE-636F-4F61-B28B-B82F6BABC5C9}
+		{796E1B2C-3E45-43E4-8C8C-ED59C914B996} = {4E770ADE-636F-4F61-B28B-B82F6BABC5C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC52CA19-2E71-4B24-A22D-395CD0BC76FD}

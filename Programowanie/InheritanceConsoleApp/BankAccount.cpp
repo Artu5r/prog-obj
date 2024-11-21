@@ -1,15 +1,16 @@
-#include <iostream>
+﻿#include <iostream>
 #include "BankAccount.h"
 
 BankAccount::BankAccount()
 {
 	balance = 1000;
 	owner = "Nieznany";
-	currency = "z�";
+	currency = "z³";
 }
 
 BankAccount::BankAccount(double b, std::string o, std::string c)
 {
+	//balance = b;
 	SetBalance(b);
 	owner = o;
 	currency = c;
@@ -17,18 +18,25 @@ BankAccount::BankAccount(double b, std::string o, std::string c)
 
 void BankAccount::SetBalance(double b)
 {
-	if (b >=0
-		&& isSetBalance == false)
+	if (b >= 0
+		&& isSetBalanceExecute == false) //aby mozna by³o tylko raz wykonaæ kod
 	{
 		balance = b;
-		isSetBalance = true;
+
+		isSetBalanceExecute = true;
 	}
 }
 
-void BankAccount::AccountInfo()
+double BankAccount::GetBalance()
 {
-	std::cout << "Informacje o koncie bankowym\n";
-	std::cout << "W�a�ciciel: " << owner << "\n";
+	//instrukcje zabezpieczaj¹ce
+	return balance;
+}
+
+void BankAccount::AccountInformation()
+{
+	std::cout << "Informacja o koncie bankowym\n";
+	std::cout << "W³aœciciel: " << owner << "\n";
 	std::cout << "Saldo: " << balance << " " << currency << "\n";
 }
 
@@ -38,20 +46,21 @@ void BankAccount::DepositToAccount(double amount)
 		balance = balance + amount;
 }
 
-bool BankAccount::WithdrawToAccount(double amount)
+bool BankAccount::WidthdrawalFromAccount(double amount)
 {
-	if (amount <= 0 && balance >= amount)
+	if (amount >= 0
+		&& balance >= amount)
 	{
 		balance = balance - amount;
 		return true;
 	}
+
 	return false;
 }
 
-void BankAccount::transferBetweenAccounts(BankAccount& account,BankAccount& targetAccount, double amount)
+void BankAccount::TransferBetweenAccounts(BankAccount& targetAcccount, double amount)
 {
-	if (account.WithdrawToAccount(amount))
-	{
-		targetAccount.DepositToAccount(amount);
-	}
+	if (WidthdrawalFromAccount(amount))
+		targetAcccount.DepositToAccount(amount);
+
 }

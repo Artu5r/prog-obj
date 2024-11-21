@@ -1,4 +1,3 @@
-#pragma once
 #include <iostream>
 
 class BankAccount
@@ -8,20 +7,19 @@ protected:
 	std::string owner;
 	std::string currency;
 
-	bool isSetBalance = false;
+	bool isSetBalanceExecute = false;
+
+	void SetBalance(double b);
 
 public:
 	BankAccount();
 	BankAccount(double b, std::string o, std::string c);
 
+	double GetBalance();
 
-	void SetBalance(double b);
-
-	void AccountInfo();
+	void AccountInformation();
 
 	void DepositToAccount(double amount);
-
-	bool WithdrawToAccount(double amount);
-
-	void transferBetweenAccounts(BankAccount& account, BankAccount& targetAccount, double amount);
+	bool WidthdrawalFromAccount(double amount);
+	void TransferBetweenAccounts(BankAccount& targetAcccount, double amount);
 };

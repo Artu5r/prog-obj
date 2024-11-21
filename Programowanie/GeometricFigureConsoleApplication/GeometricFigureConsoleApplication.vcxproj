@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{abe44f09-11c5-42e5-8e9d-f442bb05b859}</ProjectGuid>
-    <RootNamespace>InheritanceConsoleApp</RootNamespace>
+    <ProjectGuid>{796e1b2c-3e45-43e4-8c8c-ed59c914b996}</ProjectGuid>
+    <RootNamespace>GeometricFigureConsoleApplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,15 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BankAccount.cpp" />
+    <ClCompile Include="GeometricFigureConsoleApplication.cpp" />
     <ClCompile Include="GeometricFigure.cpp" />
-    <ClCompile Include="InheritanceConsoleApp.cpp" />
-    <ClCompile Include="SavingBankAccount.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BankAccount.h" />
     <ClInclude Include="GeometricFigure.h" />
-    <ClInclude Include="SavingBankAccount.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

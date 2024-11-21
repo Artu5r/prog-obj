@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="InheritanceConsoleApp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BankAccount.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SavingBankAccount.cpp">
+    <ClCompile Include="GeometricFigureConsoleApplication.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeometricFigure.cpp">
@@ -29,12 +23,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BankAccount.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SavingBankAccount.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GeometricFigure.h">
       <Filter>Header Files</Filter>
     </ClInclude>
