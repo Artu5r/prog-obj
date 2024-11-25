@@ -2,14 +2,48 @@
 
 class Square
 {
-private:
+protected:
+	double firstSideLength;
+	double secoundSideLength;
+
+public:
+	Square();
+	Square(double first, double secound);
+
+	double CalculateArea();
+
+
+};
+
+class Trapeze : public Square
+{
+protected:
 	double firstSideLength;
 	double secoundSideLength;
 	double thirdSideLength;
 	double fourthSideLength;
 
 public:
-	Square();
-	Square(double first, double secound, double third, double fourth);
+	Trapeze();
+	Trapeze(double first, double secound, double third, double fourth);
+};
+
+class Diamond
+{
+public:
+	Diamond();
+	~Diamond();
+
+private:
 
 };
+
+Diamond::Diamond()
+{
+
+}
+
+Diamond::Diamond()
+{
+
+}

@@ -128,13 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BankAccount.cpp" />
-    <ClCompile Include="GeometricFigure.cpp" />
     <ClCompile Include="InheritanceConsoleApp.cpp" />
     <ClCompile Include="SavingBankAccount.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BankAccount.h" />
-    <ClInclude Include="GeometricFigure.h" />
     <ClInclude Include="SavingBankAccount.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
