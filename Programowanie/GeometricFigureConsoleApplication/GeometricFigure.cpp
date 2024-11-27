@@ -3,34 +3,49 @@
 
 Square::Square()
 {
-	firstSideLength = 1;
-	secoundSideLength = 1;
+	sideLength = 0;
 }
 
-Square::Square(double first, double secound)
+Square::Square(double s)
 {
-	firstSideLength = first;
-	secoundSideLength = secound;
+	sideLength = s;
 }
 
 double Square::CalculateArea()
 {
-	double area = firstSideLength * secoundSideLength;
+	double area = sideLength * sideLength;
 	return area;
 }
 
-Trapeze::Trapeze()
+double Square::CalculatePerimeter()
 {
-	firstSideLength = 1;
-	secoundSideLength = 1;
-	thirdSideLength = 1;
-	fourthSideLength = 1;
+	return sideLength * 4;
 }
 
-Trapeze::Trapeze(double first, double secound, double third, double fourth)
+/////////////////////////////////////////////////
+
+Trapeze::Trapeze()
+{
+	firstSideLength = 0;
+	secondSideLength = 0;
+	thirdSideLength = 0;
+	fourthSideLength = 0;
+	height = 0;
+}
+
+Trapeze::Trapeze(double first, double secound, double third, double fourth, double h)
 {
 	firstSideLength = first;
-	secoundSideLength = secound;
+	secondSideLength = secound;
 	thirdSideLength = third;
 	fourthSideLength = fourth;
+	height = h;
+}
+
+double Trapeze::CalculateArea() {
+	return 0.5 * (firstSideLength + thirdSideLength) * height;
+}
+
+double Trapeze::CalculatePerimeter() {
+	return firstSideLength + secondSideLength + thirdSideLength + fourthSideLength;
 }
