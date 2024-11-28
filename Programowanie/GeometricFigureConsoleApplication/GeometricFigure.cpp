@@ -49,3 +49,76 @@ double Trapeze::CalculateArea() {
 double Trapeze::CalculatePerimeter() {
 	return firstSideLength + secondSideLength + thirdSideLength + fourthSideLength;
 }
+
+/////////////////////////////////////////////////
+
+Diamond::Diamond()
+{
+	sideLength = 0;
+	height = 0;
+}
+
+Diamond::Diamond(double side, double h)
+{
+	sideLength = side;
+	height = h;
+}
+
+double Diamond::CalculateArea() {
+	return sideLength * height;
+}
+
+double Diamond::CalculatePerimeter() {
+	return sideLength * 4;
+}
+
+/////////////////////////////////////////////////
+
+Parallelogram::Parallelogram()
+{
+	firstSideLength = 0;
+	secondSideLength = 0;
+	height = 0;
+}
+
+Parallelogram::Parallelogram(double first, double second, double h)
+{
+	firstSideLength = first;
+	secondSideLength = second;
+	height = h;
+}
+
+double Parallelogram::CalculateArea()
+{
+	return firstSideLength * height;
+}
+
+double Parallelogram::CalculatePerimeter()
+{
+	return firstSideLength * 2 + secondSideLength * 2;
+}
+
+/////////////////////////////////////////////////
+
+
+Rectangle::Rectangle()
+{
+	firstSideLength = 0;
+	secondSideLength = 0;
+}
+
+Rectangle::Rectangle(double first, double second)
+{
+	firstSideLength = first;
+	secondSideLength = second;
+}
+
+double Rectangle::CalculateArea()
+{
+	return firstSideLength * secondSideLength;
+}
+
+double Rectangle::CalculatePerimeter()
+{
+	return firstSideLength * 2 + secondSideLength * 2;
+}

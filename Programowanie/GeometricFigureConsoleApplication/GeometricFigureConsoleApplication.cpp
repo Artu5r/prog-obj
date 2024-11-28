@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include "GeometricFigure.h"
-#include "GeometricFigure.cpp"
 
 int main()
 {
@@ -9,11 +8,18 @@ int main()
 	// Zdefiniuj podstawowe metody.
 
 	Square firstSquare(5);
-	std::cout << "Pole kwadratu: " << firstSquare.CalculateArea() << ", obwód: " << firstSquare.CalculatePerimeter() << "/n";
+	std::cout << "Pole kwadratu: " << firstSquare.CalculateArea() << ", obwod: " << firstSquare.CalculatePerimeter() << "\n";
 
 	Trapeze firstTrapeze(3, 5, 4, 6, 4);
-	std::cout << "Pole trapezu: " << firstTrapeze.CalculateArea() << ", obwód: " << firstTrapeze.CalculatePerimeter() << "/n";
+	std::cout << "Pole trapezu: " << firstTrapeze.CalculateArea() << ", obwod: " << firstTrapeze.CalculatePerimeter() << "\n";
 
+	Diamond firstDiamond(5, 10);
+	std::cout << "Pole rombu: " << firstDiamond.CalculateArea() << ", obwod: " << firstDiamond.CalculatePerimeter() << "\n";
 
+	Parallelogram firstParallelogram(14, 10, 5);
+	std::cout << "Pole rownolegloboku: " << firstParallelogram.CalculateArea() << ", obwod: " << firstParallelogram.CalculatePerimeter() << "\n";
+
+	Rectangle firstRectangle(5, 8);
+	std::cout << "Pole prostokata: " << firstRectangle.CalculateArea() << ", obwod: " << firstRectangle.CalculatePerimeter() << "\n";
 
 }

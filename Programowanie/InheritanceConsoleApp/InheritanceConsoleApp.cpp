@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include "SavingBankAccount.h"
-#include "GeometricFigure.h"
 
 int main()
 {
@@ -14,7 +13,7 @@ int main()
     //     trapez, romb, równoleg³obok, prostok¹t i kwadrat.
     // Zdefiniuj podstawowe metody.
 
-    Square firstSquare; //kwadrat
+    //Square firstSquare; //kwadrat
 
 
 
