@@ -3,17 +3,18 @@
 class Square
 {
 protected:
-	double sideLength;
+	double firstSideLength;
 
 public:
 	Square();
 	Square(double side);
 
+	void Info();
 	double CalculateArea();
 	double CalculatePerimeter();
 };
 
-class Trapeze : public Square
+class Trapeze
 {
 protected:
 	double firstSideLength;
@@ -26,6 +27,7 @@ public:
 	Trapeze();
 	Trapeze(double first, double second, double third, double fourth, double height);
 
+	void Info();
 	double CalculateArea();
 	double CalculatePerimeter();
 };
@@ -33,13 +35,14 @@ public:
 class Diamond
 {
 protected:
-	double sideLength;
+	double firstSideLength;
 	double height;
 
 public:
 	Diamond();
 	Diamond(double side, double h);
 
+	void Info();
 	double CalculateArea();
 	double CalculatePerimeter();
 };
@@ -55,6 +58,7 @@ public:
 	Parallelogram();
 	Parallelogram(double first, double second, double h);
 	
+	void Info();
 	double CalculateArea();
 	double CalculatePerimeter();
 };
@@ -69,6 +73,7 @@ public:
 	Rectangle();
 	Rectangle(double first, double second);
 
+	void Info();
 	double CalculateArea();
 	double CalculatePerimeter();
 };

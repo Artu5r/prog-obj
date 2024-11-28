@@ -3,23 +3,29 @@
 
 Square::Square()
 {
-	sideLength = 0;
+	firstSideLength = 0;
 }
 
 Square::Square(double s)
 {
-	sideLength = s;
+	firstSideLength = s;
+}
+
+void Square::Info()
+{
+	std::cout << "Kwadrat: \n";
+	std::cout << "bok = " << firstSideLength;
 }
 
 double Square::CalculateArea()
 {
-	double area = sideLength * sideLength;
+	double area = firstSideLength * firstSideLength;
 	return area;
 }
 
 double Square::CalculatePerimeter()
 {
-	return sideLength * 4;
+	return firstSideLength * 4;
 }
 
 /////////////////////////////////////////////////
@@ -42,6 +48,15 @@ Trapeze::Trapeze(double first, double secound, double third, double fourth, doub
 	height = h;
 }
 
+void Trapeze::Info()
+{
+	std::cout << "Trapez: \n";
+	std::cout << "bok1 = " << firstSideLength << "\n";
+	std::cout << "bok3 = " << secondSideLength << "\n";
+	std::cout << "bok4 = " << thirdSideLength << "\n";
+	std::cout << "bok5 = " << fourthSideLength << "\n";
+}
+
 double Trapeze::CalculateArea() {
 	return 0.5 * (firstSideLength + thirdSideLength) * height;
 }
@@ -54,22 +69,29 @@ double Trapeze::CalculatePerimeter() {
 
 Diamond::Diamond()
 {
-	sideLength = 0;
+	firstSideLength = 0;
 	height = 0;
 }
 
 Diamond::Diamond(double side, double h)
 {
-	sideLength = side;
+	firstSideLength = side;
 	height = h;
 }
 
+void Diamond::Info()
+{
+	std::cout << "Romb: \n";
+	std::cout << "bok1 = " << firstSideLength << "\n";
+	std::cout << "wysokosc = " << height << "\n";
+}
+
 double Diamond::CalculateArea() {
-	return sideLength * height;
+	return firstSideLength * height;
 }
 
 double Diamond::CalculatePerimeter() {
-	return sideLength * 4;
+	return firstSideLength * 4;
 }
 
 /////////////////////////////////////////////////
@@ -86,6 +108,14 @@ Parallelogram::Parallelogram(double first, double second, double h)
 	firstSideLength = first;
 	secondSideLength = second;
 	height = h;
+}
+
+void Parallelogram::Info()
+{
+	std::cout << "Rownoleglobok: \n";
+	std::cout << "bok1 = " << firstSideLength << "\n";
+	std::cout << "bok2 = " << secondSideLength << "\n";
+	std::cout << "wysokosc = " << height << "\n";
 }
 
 double Parallelogram::CalculateArea()
@@ -111,6 +141,13 @@ Rectangle::Rectangle(double first, double second)
 {
 	firstSideLength = first;
 	secondSideLength = second;
+}
+
+void Rectangle::Info()
+{
+	std::cout << "Prostokąt: \n";
+	std::cout << "bok1 = " << firstSideLength << "\n";
+	std::cout << "bok2 = " << secondSideLength << "\n";
 }
 
 double Rectangle::CalculateArea()
