@@ -2,7 +2,8 @@
 #include <fstream>
 #include <vector>
 
-int main()
+// zad 4.1
+void zad4_1()
 {
 	std::ifstream file("przyk³lad.txt");
 
@@ -34,8 +35,7 @@ int main()
 	{
 		std::cout << num << ", ";
 	}
-	
-// zad 4.1
+
 	std::cout << "Zadanie 4.1\n";
 
 	int count = 0;
@@ -56,4 +56,38 @@ int main()
 			count++;
 		}
 	}
+}
+
+void zad4_3()
+{
+	std::ifstream file("liczby.txt");
+
+	int numbers[200];
+
+	int x;
+	int y;
+	int z;
+	int counter = 0;
+
+	for (int i = 0; i < 200; i++)
+	{
+		file >> numbers[i];
+		x = numbers[i];
+			
+
+		if (z % y == 0 && y % x == 0)
+		{
+			std::cout << "Dobre liczby: " << x << " " << y << " " << z;
+			counter++;
+		}
+
+	}
+
+
+}
+
+int main()
+
+{
+	zad4_3();
 }
