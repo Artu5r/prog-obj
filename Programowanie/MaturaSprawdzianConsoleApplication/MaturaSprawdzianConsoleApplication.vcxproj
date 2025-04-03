@@ -136,6 +136,7 @@
     <Text Include="przyklad.txt" />
     <Text Include="sedziowie.txt" />
     <Text Include="temperatury.txt" />
+    <Text Include="wyniki4.txt.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
