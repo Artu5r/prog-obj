@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int reversedLiczba(int n)
+int reversedNumber(int n)
 {
 	int rev = 0;
 	while (n > 0)
@@ -15,7 +15,7 @@ int reversedLiczba(int n)
 	return rev;
 }
 
-void zad4()
+void zad4_0()
 {
 	ifstream file("liczby.txt");
 	int numbers[100];
@@ -30,7 +30,7 @@ void zad4()
 
 	for (int i = 0; i < 100; i++)
 	{
-		revNumbers[i] = reversedLiczba(numbers[i]);
+		revNumbers[i] = reversedNumber(numbers[i]);
 		cout << revNumbers[i] << endl;
 	}
 }
@@ -50,7 +50,7 @@ void zad4_1()
 
 	for (int i = 0; i < 100; i++)
 	{
-		revNumbers[i] = reversedLiczba(numbers[i]);
+		revNumbers[i] = reversedNumber(numbers[i]);
 	}
 
 	for (int i = 0; i < 100; i++)
@@ -77,7 +77,7 @@ void zad4_2()
 
 	for (int i = 0; i < 100; i++)
 	{
-		revNumbers[i] = reversedLiczba(numbers[i]);
+		revNumbers[i] = reversedNumber(numbers[i]);
 	}
 
 	int number = 0;

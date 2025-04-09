@@ -20,22 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="kluby.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
     <Text Include="liczby.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="mecze.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
     <Text Include="przyklad.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="sedziowie.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="temperatury.txt">
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="wyniki4.txt">

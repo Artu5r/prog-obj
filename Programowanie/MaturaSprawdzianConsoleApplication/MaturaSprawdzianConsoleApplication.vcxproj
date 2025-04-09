@@ -130,12 +130,8 @@
     <ClCompile Include="MaturaSprawdzianConsoleApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="kluby.txt" />
     <Text Include="liczby.txt" />
-    <Text Include="mecze.txt" />
     <Text Include="przyklad.txt" />
-    <Text Include="sedziowie.txt" />
-    <Text Include="temperatury.txt" />
     <Text Include="wyniki4.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
