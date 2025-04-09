@@ -38,7 +38,7 @@
     <Text Include="temperatury.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="wyniki4.txt.txt">
+    <Text Include="wyniki4.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>
