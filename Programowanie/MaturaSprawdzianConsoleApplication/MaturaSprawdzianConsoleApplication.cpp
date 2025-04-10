@@ -64,7 +64,7 @@ void zad4_1()
 
 void zad4_2()
 {
-	ifstream file("przyklad.txt");
+	ifstream file("liczby.txt");
 	int numbers[100];
 
 	for (int i = 0; i < 100; i++)
@@ -80,24 +80,32 @@ void zad4_2()
 		revNumbers[i] = reversedNumber(numbers[i]);
 	}
 
-	int number = 0;
-	int maxDifference = 0;
-	int numberWithMaxDifference = 0;
+	int absoluteDifference[100];
+	int max;
+	int maxInd = 0;
+	int lastInd = 0;
 
 	for (int i = 0; i < 100; i++)
 	{
-		int difference = numbers[i] - revNumbers[i];
-		if (difference < 0)
+		absoluteDifference[i] = numbers[i] - revNumbers[i];
+
+		if (absoluteDifference[i] < 0)
 		{
-			difference = -difference;
+			absoluteDifference[i] = absoluteDifference[i] * -1;
 		}
-		if (difference > maxDifference)
+
+		max = absoluteDifference[maxInd];
+
+		if (absoluteDifference[i] > max)
 		{
-			maxDifference = difference;
-			numberWithMaxDifference = number;
+			max = absoluteDifference[i];
+			maxInd = i;
 		}
+		lastInd = i;
+
+
 	}
-	cout << numberWithMaxDifference << ", " << maxDifference << "\n";
+	cout << numbers[maxInd] << " " << max << "\n";
 }
 
 void zad4_3()
