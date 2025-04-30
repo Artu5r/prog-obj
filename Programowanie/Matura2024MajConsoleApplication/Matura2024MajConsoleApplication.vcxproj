@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{220e1e94-ed70-4fd2-898f-c94290d4a173}</ProjectGuid>
-    <RootNamespace>MaturaSprawdzianConsoleApplication</RootNamespace>
+    <ProjectGuid>{848fea2f-474a-4a04-a51f-60983fc4f145}</ProjectGuid>
+    <RootNamespace>Matura2024MajConsoleApplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Matura2022CzerwiecConsoleApplication</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,12 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MaturaSprawdzianConsoleApplication.cpp" />
+    <ClCompile Include="Matura2024MajConsoleApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="liczby.txt" />
-    <Text Include="przyklad.txt" />
-    <Text Include="wyniki4.txt" />
+    <Text Include="skrot.txt" />
+    <Text Include="skrot2.txt" />
+    <Text Include="skrot2_przyklad.txt" />
+    <Text Include="skrot_przyklad.txt" />
+    <Text Include="wyniki3_2.txt" />
+    <Text Include="wyniki3_3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
