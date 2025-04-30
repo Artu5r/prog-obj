@@ -5,7 +5,7 @@
 using namespace std;
 
 // zad3.1
-int skrotLiczba(int liczba)
+int skrNumber(int liczba)
 {
     int power = 1;
     int score = 0;
@@ -58,7 +58,7 @@ int main() {
 
     for (int number : lines)
     {
-        if (skrotLiczba(number) == 0)
+        if (skrNumber(number) == 0)
         {
             withoutAbbreviation.push_back(number);
         }
@@ -98,7 +98,7 @@ int main() {
 
     for (int number : line1)
     {
-        int abbreviation = skrotLiczba(number);
+        int abbreviation = skrNumber(number);
         if (gcd(number, abbreviation) == 7)
         {
             cout << number << endl;
