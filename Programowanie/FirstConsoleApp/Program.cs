@@ -17,6 +17,7 @@ Console.WriteLine($"Pierwsza liczba to {firstNumber}");
 Console.WriteLine($"Druga liczba to {secoundNumber}");
 
 //-------------------------------------------------------------------
+Console.WriteLine("\n\n");
 
 void ParametrV1(int p)
 {
@@ -48,7 +49,7 @@ Console.WriteLine($"firstNumber po {firstNumber}");
 void ParametrV3(out int p)
 {
     //Console.WriteLine($"Parametr w ParametrV3 {p}");
-    p++;
+    p=19;
     Console.WriteLine($"Parametr w ParametrV3 {p}");
 }
 
@@ -56,4 +57,14 @@ int thirdNumber;
 ParametrV3(out thirdNumber);
 Console.WriteLine($"thirdNumber po {thirdNumber}");
 //ParametrV3(ref 99); //BLAD
+
+//-----------------------------------------------------
+
+string firstStrNumber = "15";
+
+int firstConvertNumber = int.Parse(firstStrNumber);
+Console.WriteLine($"Po konwersji {firstStrNumber}");
+
+if(int.TryParse(firstStrNumber, out int secondStrNumber))
+    Console.WriteLine($"Udalo sie skonwerstowac {secondStrNumber}");
 
