@@ -1,4 +1,6 @@
-﻿Console.Write("Hello world\n");
+﻿using System.Drawing;
+
+Console.Write("Hello world\n");
 Console.WriteLine("Hello, World!");
 
 string name = "Jan";
@@ -68,3 +70,8 @@ Console.WriteLine($"Po konwersji {firstStrNumber}");
 if(int.TryParse(firstStrNumber, out int secondStrNumber))
     Console.WriteLine($"Udalo sie skonwerstowac {secondStrNumber}");
 
+
+void ParametrTestClass_v1(Point)
+{
+
+}
