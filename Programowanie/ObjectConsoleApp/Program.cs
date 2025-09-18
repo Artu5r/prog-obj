@@ -67,8 +67,8 @@ void ParametrTestClass_v3(ref PointClass pc)
 ParametrTestClass_v1(firstPointClass);
 Console.WriteLine($"firstPointClass ({firstPointClass.x} , {firstPointClass.y})");
 
-ParametrTestClass_v1(firstPointClass);
+ParametrTestClass_v2(firstPointClass);
 Console.WriteLine($"firstPointClass ({firstPointClass.x} , {firstPointClass.y})");
 
-ParametrTestClass_v1(ref firstPointClass);
+ParametrTestClass_v3(ref firstPointClass);
 Console.WriteLine($"firstPointClass ({firstPointClass.x} , {firstPointClass.y})");
