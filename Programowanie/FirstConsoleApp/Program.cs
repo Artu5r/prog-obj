@@ -69,9 +69,3 @@ Console.WriteLine($"Po konwersji {firstStrNumber}");
 
 if(int.TryParse(firstStrNumber, out int secondStrNumber))
     Console.WriteLine($"Udalo sie skonwerstowac {secondStrNumber}");
-
-
-void ParametrTestClass_v1(Point)
-{
-
-}

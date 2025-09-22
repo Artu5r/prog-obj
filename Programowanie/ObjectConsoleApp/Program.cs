@@ -72,3 +72,4 @@ Console.WriteLine($"firstPointClass ({firstPointClass.x} , {firstPointClass.y})"
 
 ParametrTestClass_v3(ref firstPointClass);
 Console.WriteLine($"firstPointClass ({firstPointClass.x} , {firstPointClass.y})");
+
