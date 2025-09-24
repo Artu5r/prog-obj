@@ -8,3 +8,6 @@ firstPoint = new Point(18,-7);
 firstPoint = new (18, -7);
 
 firstPoint.Show();
+
+firstPoint.SetX(99);
+int a = firstPoint.GetX();

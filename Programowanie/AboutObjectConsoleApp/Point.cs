@@ -28,4 +28,14 @@ internal class Point
         Console.WriteLine($"({x},{y})");
     }
 
+    public void SetX(int x)
+    {
+        this.x = x;
+    }
+
+    public int GetX()
+    {
+        return x;
+    }
+
 }
