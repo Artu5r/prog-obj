@@ -23,8 +23,8 @@ class Osoba
 
     public Osoba()
     {
-
-        instanceCount++;
+        
+        instanceCount++;/////////
     }
 
     public Osoba(int i, string n)
@@ -38,7 +38,7 @@ class Osoba
     public Osoba()
     {
 
-        instanceCount++;
+        instanceCount++;////////////
     }
 
     void WriteName(string arg)
