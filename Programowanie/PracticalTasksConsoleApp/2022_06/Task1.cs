@@ -50,7 +50,7 @@ class Osoba
         }
             
 
-        Console.WriteLine();
+        Console.WriteLine($"Czesc {arg} mam na imie {name}");
     }
 
 }
