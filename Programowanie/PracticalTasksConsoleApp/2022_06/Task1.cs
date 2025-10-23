@@ -55,3 +55,11 @@ class Osoba
         Console.WriteLine($"Czesc {arg} mam na imie {name}");
     }
 }
+
+/*
+
+
+
+
+
+*/
