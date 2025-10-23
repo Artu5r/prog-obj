@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PracticalTasksConsoleApp._2022_06
 {
-    internal class Task1
+    internal class Task3
     {
         public void Task()
         {
-
+            Osoba osoba = new Osoba(1,"Piotr");
+            osoba.WriteName("Jan");
         }
     }
 }
@@ -23,34 +25,33 @@ class Osoba
 
     public Osoba()
     {
-        
-        instanceCount++;/////////
+        instanceCount++;
+        id = 0;
+        name = "";
     }
 
     public Osoba(int i, string n)
     {
-        i = this.id;
-        n = this.name;
-
+        id = i;
+        name = n;
         instanceCount++;
     }
 
-    public Osoba()
+    public Osoba(Osoba copy)
     {
-
-        instanceCount++;////////////
+        instanceCount++;
+        copy.id = id;
+        copy.name = name;
     }
 
-    void WriteName(string arg)
+    public void WriteName(string arg)
     {
-        if (name is null)
+        if (name == "")
         {
             Console.WriteLine("Brak danych");
             return;
         }
-            
 
         Console.WriteLine($"Czesc {arg} mam na imie {name}");
     }
-
 }
