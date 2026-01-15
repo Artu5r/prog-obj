@@ -1,4 +1,5 @@
-﻿void ErrorsV1()
+﻿
+void ErrorsV1()
 {
     Console.WriteLine("Podaj pierwszą liczbę:");
     string strFirstNumber = Console.ReadLine();
@@ -225,4 +226,55 @@ void ErrorsV7()
     }
 }
 
-ErrorsV7();
+int Div8(int a, int b)
+{
+    int r = 0;
+    if (a < 0)
+    {
+        throw new Exception("Pierwiastek ujemny");
+    }
+    r = a / b + (int)Math.Sqrt(a);
+    return r;
+}
+
+void ErrorsV8()
+{
+    bool dalej;
+    do
+    {
+        dalej = true;
+        Console.WriteLine("Podaj pierwszą liczbę:");
+        string strFirstNumber = Console.ReadLine();
+        int firstNumber = int.Parse(strFirstNumber);
+
+        int secondNumber;
+
+        Console.WriteLine("Podaj drugą liczbę:");
+        secondNumber = int.Parse(Console.ReadLine());
+
+        int result = 0;
+        try
+        {
+            result = Div8(firstNumber, secondNumber);
+            Console.WriteLine($"Wynik: {result}");
+        }
+        catch(DivideByZeroException ex)
+        {
+            Console.WriteLine($"Błąd: {ex.Message}");
+            //throw;
+            throw new ArgumentNullException("Moja wiadomość - dzielenie przez zero", ex);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Błąd: {ex.Message}");
+            dalej = false;
+        }
+        finally
+        {
+            Console.WriteLine("Koniec obliczeń");
+        }
+
+    } while (!dalej);
+}
+
+ErrorsV8();

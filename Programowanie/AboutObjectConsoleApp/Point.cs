@@ -1,35 +1,59 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace AboutObjectConsoleApp;
 
-internal class Point
+internal class Point /*: Object*/
 {
-    private int x;
-    private int y;
+    protected int x;
+    public int X
+    {
+        get
+        {
+            return x;
+        }
+
+        set /*(int value)*/
+        {
+            //if (value >= 0)
+            x = value;
+        }
+    }
+
+    //private int y;
+    //public int Y
+    //{
+    //    get
+    //    {
+    //        return y;
+    //    }
+
+    //    set
+    //    {
+    //        y = value;
+    //    }
+    //}
+    public int Y { get; set; }
+
 
     public Point()
     {
         x = 5;
-        y = 8;
+        Y = 8;
     }
 
     public Point(int a, int b)
     {
-        x = a;
-        y = b;
+        x = a; 
+        Y = b;
     }
 
     public void Show()
     {
-        Console.WriteLine($"({x},{y})");
+        Console.WriteLine($"({x},{Y})");
     }
 
     public void SetX(int x)
     {
+        //if (x >= 0)
         this.x = x;
     }
 
@@ -37,5 +61,4 @@ internal class Point
     {
         return x;
     }
-
 }

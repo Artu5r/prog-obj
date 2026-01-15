@@ -14,54 +14,59 @@ Console.WriteLine($"secondPointStruct ({secondPointStruct.x} , {secondPointStruc
 
 void ParametrTestStruct_v1(PointStruct ps)
 {
-    Console.WriteLine($"firstPointStruct ({ps.x} , {ps.y})");
+    Console.WriteLine($"ParametrTestStruct_v1 ({ps.x} , {ps.y})");
     ps.x = 99;
-    Console.WriteLine($"firstPointStruct ({ps.x} , {ps.y})");
+    Console.WriteLine($"ParametrTestStruct_v1 ({ps.x} , {ps.y})");
 }
 void ParametrTestStruct_v2(ref PointStruct ps)
 {
-    Console.WriteLine($"firstPointStruct ({ps.x} , {ps.y})");
+    Console.WriteLine($"ParametrTestStruct_v2 ({ps.x} , {ps.y})");
     ps.x = 99;
-    Console.WriteLine($"firstPointStruct ({ps.x} , {ps.y})");
+    Console.WriteLine($"ParametrTestStruct_v2 ({ps.x} , {ps.y})");
 }
-
 
 ParametrTestStruct_v1(firstPointStruct);
 Console.WriteLine($"firstPointStruct ({firstPointStruct.x} , {firstPointStruct.y})");
+
 ParametrTestStruct_v2(ref firstPointStruct);
 Console.WriteLine($"firstPointStruct ({firstPointStruct.x} , {firstPointStruct.y})");
 
+
+//--------------------------------------------------------------------
+
 PointClass firstPointClass = new PointClass();
 firstPointClass.x = 15;
-firstPointClass.y = 16;
+firstPointClass.y = 99;
+
 Console.WriteLine($"firstPointClass ({firstPointClass.x} , {firstPointClass.y})");
 
 PointClass secondPointClass = firstPointClass;
-secondPointClass.x = 17;
+secondPointClass.x = 29;
+
 Console.WriteLine($"firstPointClass ({firstPointClass.x} , {firstPointClass.y})");
-Console.WriteLine($"firstPointClass ({secondPointClass.x} , {secondPointClass.y})");
+Console.WriteLine($"secondPointClass ({secondPointClass.x} , {secondPointClass.y})");
 
 void ParametrTestClass_v1(PointClass pc)
 {
     Console.WriteLine($"ParametrTestClass_v1 ({pc.x} , {pc.y})");
-    pc.x = 19;
+    pc.x = 79;
     Console.WriteLine($"ParametrTestClass_v1 ({pc.x} , {pc.y})");
 }
 
 void ParametrTestClass_v2(PointClass pc)
 {
-    Console.WriteLine($"firstPointClass ({secondPointClass.x} , {secondPointClass.y})");
+    Console.WriteLine($"ParametrTestClass_v2 ({pc.x} , {pc.y})");
     pc = new PointClass();
     pc.x = 45;
-    Console.WriteLine($"firstPointClass ({secondPointClass.x} , {secondPointClass.y})");
+    Console.WriteLine($"ParametrTestClass_v2 ({pc.x} , {pc.y})");
 }
 
 void ParametrTestClass_v3(ref PointClass pc)
 {
-    Console.WriteLine($"firstPointClass ({secondPointClass.x} , {secondPointClass.y})");
+    Console.WriteLine($"ParametrTestClass_v3 ({pc.x} , {pc.y})");
     pc = new PointClass();
     pc.x = 45;
-    Console.WriteLine($"firstPointClass ({secondPointClass.x} , {secondPointClass.y})");
+    Console.WriteLine($"ParametrTestClass_v3 ({pc.x} , {pc.y})");
 }
 
 ParametrTestClass_v1(firstPointClass);

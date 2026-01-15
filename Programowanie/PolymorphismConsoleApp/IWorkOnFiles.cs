@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ObjectConsoleApp;
-
-internal struct PointStruct
+namespace PolymorphismConsoleApp
 {
-    public int x;
-    public int y;
+    internal interface IWorkOnFiles
+    {
+        void SaveToFile();
+    }
 }
