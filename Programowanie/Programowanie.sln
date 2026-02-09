@@ -79,7 +79,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "C#", "C#", "{6EF0C359-90F8-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalTasksConsoleApp", "PracticalTasksConsoleApp\PracticalTasksConsoleApp.csproj", "{C899878F-F404-4150-A142-1DAFCE9D0738}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zadania", "Zadania", "{87067EA9-CBCB-4DD4-A8D5-27672F2E3CF1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zadania 1", "Zadania 1", "{87067EA9-CBCB-4DD4-A8D5-27672F2E3CF1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsConsoleApp", "CollectionsConsoleApp\CollectionsConsoleApp.csproj", "{330C97C7-FBBA-E540-34B7-5327E888C7EA}"
 EndProject
@@ -92,6 +92,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectConsoleApp", "ObjectConsoleApp\ObjectConsoleApp.csproj", "{DBE312CC-0755-565B-64B8-A95A901C6ACE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolymorphismConsoleApp", "PolymorphismConsoleApp\PolymorphismConsoleApp.csproj", "{6AA675EE-ACD4-61FC-8340-B00E90054560}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqPracticalTasksConsoleApp", "LinqPracticalTasksConsoleApp\LinqPracticalTasksConsoleApp.csproj", "{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -475,6 +477,18 @@ Global
 		{6AA675EE-ACD4-61FC-8340-B00E90054560}.Release|x64.Build.0 = Release|Any CPU
 		{6AA675EE-ACD4-61FC-8340-B00E90054560}.Release|x86.ActiveCfg = Release|Any CPU
 		{6AA675EE-ACD4-61FC-8340-B00E90054560}.Release|x86.Build.0 = Release|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Debug|x64.Build.0 = Debug|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Debug|x86.Build.0 = Debug|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Release|x64.ActiveCfg = Release|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Release|x64.Build.0 = Release|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Release|x86.ActiveCfg = Release|Any CPU
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -523,6 +537,7 @@ Global
 		{38CD7D0B-FDC5-F5F2-152A-F6888A294151} = {6EF0C359-90F8-4A90-B2EC-D076ADD80228}
 		{DBE312CC-0755-565B-64B8-A95A901C6ACE} = {6EF0C359-90F8-4A90-B2EC-D076ADD80228}
 		{6AA675EE-ACD4-61FC-8340-B00E90054560} = {6EF0C359-90F8-4A90-B2EC-D076ADD80228}
+		{877C3868-15C3-F4EB-F6CA-1B98075D0FC8} = {6EF0C359-90F8-4A90-B2EC-D076ADD80228}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC52CA19-2E71-4B24-A22D-395CD0BC76FD}
