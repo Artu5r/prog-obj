@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,58 +8,58 @@ namespace LinqPracticalTasksConsoleApp;
 
 /*
 ========================================
-== POZIOM 1 – PODSTAWOWY ==
+== POZIOM 1 â€“ PODSTAWOWY ==
 ========================================
 
-1. ZnajdŸ wszystkie osoby z Krakowa.
-2. ZnajdŸ osoby pe³noletnie.
-3. Posortuj osoby po wieku rosn¹co.
-4. Posortuj osoby po nazwisku malej¹co.
-5. Wypisz tylko imiê i nazwisko ka¿dej osoby.
-6. Wypisz tylko miasta bez duplikatów.
-7. Oblicz liczbê osób z Warszawy.
-8. Oblicz œredni¹ pensjê wszystkich osób.
-9. ZnajdŸ najm³odsz¹ osobê.
-10. SprawdŸ, czy jest ktoœ z Gdañska.
+1. ZnajdÅº wszystkie osoby z Krakowa.
+2. ZnajdÅº osoby peÅ‚noletnie.
+3. Posortuj osoby po wieku rosnÄ…co.
+4. Posortuj osoby po nazwisku malejÄ…co.
+5. Wypisz tylko imiÄ™ i nazwisko kaÅ¼dej osoby.
+6. Wypisz tylko miasta bez duplikatÃ³w.
+7. Oblicz liczbÄ™ osÃ³b z Warszawy.
+8. Oblicz Å›redniÄ… pensjÄ™ wszystkich osÃ³b.
+9. ZnajdÅº najmÅ‚odszÄ… osobÄ™.
+10. SprawdÅº, czy jest ktoÅ› z GdaÅ„ska.
 
 
 ========================================
-== POZIOM 2 – ŒREDNI ==
+== POZIOM 2 â€“ ÅšREDNI ==
 ========================================
 
-11. Posortuj osoby po mieœcie, a w ramach miasta po pensji malej¹co.
-12. ZnajdŸ osoby w wieku od 25 do 35 lat (w³¹cznie).
-13. Oblicz sumê pensji osób z Kielc.
-14. ZnajdŸ pierwsz¹ osobê, której pensja jest wiêksza ni¿ 10 000.
-15. ZnajdŸ ostatni¹ osobê w kolejnoœci alfabetycznej po nazwisku.
-16. Wygeneruj dane osób w formacie: "Imiê Nazwisko (Miasto)".
-17. SprawdŸ, czy wszyscy maj¹ co najmniej 18 lat.
+11. Posortuj osoby po mieÅ›cie, a w ramach miasta po pensji malejÄ…co.
+12. ZnajdÅº osoby w wieku od 25 do 35 lat (wÅ‚Ä…cznie).
+13. Oblicz sumÄ™ pensji osÃ³b z Kielc.
+14. ZnajdÅº pierwszÄ… osobÄ™, ktÃ³rej pensja jest wiÄ™ksza niÅ¼ 10 000.
+15. ZnajdÅº ostatniÄ… osobÄ™ w kolejnoÅ›ci alfabetycznej po nazwisku.
+16. Wygeneruj dane osÃ³b w formacie: "ImiÄ™ Nazwisko (Miasto)".
+17. SprawdÅº, czy wszyscy majÄ… co najmniej 18 lat.
 18. Policz, ile jest kobiet.
-19. ZnajdŸ osoby, które zarabiaj¹ wiêcej ni¿ œrednia pensja.
-20. ZnajdŸ najstarsz¹ osobê z Krakowa.
+19. ZnajdÅº osoby, ktÃ³re zarabiajÄ… wiÄ™cej niÅ¼ Å›rednia pensja.
+20. ZnajdÅº najstarszÄ… osobÄ™ z Krakowa.
 
 
 ========================================
-== POZIOM 3 – ZAAWANSOWANY ==
+== POZIOM 3 â€“ ZAAWANSOWANY ==
 ========================================
 
-22. ZnajdŸ osoby, które maj¹ skill "C#".
-23. ZnajdŸ osoby, które maj¹ co najmniej trzy skille.
-24. ZnajdŸ osoby z Warszawy, posortuj je po wieku malej¹co i wypisz tylko ich imiê, nazwisko, wiek i pensjê.
-25. SprawdŸ, czy ktoœ ma skill "Azure".
-26. SprawdŸ, czy wszyscy zarabiaj¹ co najmniej 4000.
-27. ZnajdŸ osobê o najwiêkszej pensji.
-28. ZnajdŸ osobê o najmniejszej pensji.
-29. Wypisz osoby, które maj¹ taki sam wiek jak najstarsza osoba.
+22. ZnajdÅº osoby, ktÃ³re majÄ… skill "C#".
+23. ZnajdÅº osoby, ktÃ³re majÄ… co najmniej trzy skille.
+24. ZnajdÅº osoby z Warszawy, posortuj je po wieku malejÄ…co i wypisz tylko ich imiÄ™, nazwisko, wiek i pensjÄ™.
+25. SprawdÅº, czy ktoÅ› ma skill "Azure".
+26. SprawdÅº, czy wszyscy zarabiajÄ… co najmniej 4000.
+27. ZnajdÅº osobÄ™ o najwiÄ™kszej pensji.
+28. ZnajdÅº osobÄ™ o najmniejszej pensji.
+29. Wypisz osoby, ktÃ³re majÄ… taki sam wiek jak najstarsza osoba.
 
 
 ========================================
-== POZIOM 4 – EKSTRA / DLA CHÊTNYCH ==
+== POZIOM 4 â€“ EKSTRA / DLA CHÄ˜TNYCH ==
 ========================================
 
-32. Posortuj osoby wed³ug liczby posiadanych skilli.
-33. Podziel osoby na dwie listy: zarabiaj¹cych przynajmniej 8000 oraz zarabiaj¹cych mniej ni¿ 8000.
-35. Przyporz¹dkuj ka¿d¹ osobê do przedzia³u wiekowego (np. 20–29, 30–39, 40–49) i wypisz osoby z ka¿dego przedzia³u.
+32. Posortuj osoby wedÅ‚ug liczby posiadanych skilli.
+33. Podziel osoby na dwie listy: zarabiajÄ…cych przynajmniej 8000 oraz zarabiajÄ…cych mniej niÅ¼ 8000.
+35. PrzyporzÄ…dkuj kaÅ¼dÄ… osobÄ™ do przedziaÅ‚u wiekowego (np. 20â€“29, 30â€“39, 40â€“49) i wypisz osoby z kaÅ¼dego przedziaÅ‚u.
 
 */
 
@@ -78,18 +78,18 @@ internal class Task1
         {
             new Person() { Id=1, FirstName="Anna",  LastName="Nowak",    Age=29, Gender=Gender.Female, City="Kielce", Salary=8200m,  Skills=["C#", "LINQ", "SQL"] },
             new() { Id=2, FirstName="Marek", LastName="Kowalski", Age=43, Gender=Gender.Male,   City="Warszawa", Salary=15000m, Skills=["Azure", "C#", "DevOps"] },
-            new() { Id=3, FirstName="Ewa",   LastName="Wiœniewska",Age=35, Gender=Gender.Female, City="Kraków", Salary=9800m,  Skills=["JavaScript", "React"] },
-            new() { Id=4, FirstName="Jan",   LastName="Zieliñski", Age=43, Gender=Gender.Male,   City="Gdañsk", Salary=12000m, Skills=["C#", "SQL"] },
+            new() { Id=3, FirstName="Ewa",   LastName="WiÅ›niewska",Age=35, Gender=Gender.Female, City="KrakÃ³w", Salary=9800m,  Skills=["JavaScript", "React"] },
+            new() { Id=4, FirstName="Jan",   LastName="ZieliÅ„ski", Age=43, Gender=Gender.Male,   City="GdaÅ„sk", Salary=12000m, Skills=["C#", "SQL"] },
             new() { Id=5, FirstName="Ola",   LastName="Maj",       Age=26, Gender=Gender.Female, City="Kielce", Salary=7200m,  Skills=["Python", "ML"] },
             new() { Id=6, FirstName="Piotr", LastName="Lewandowski",Age=37,Gender=Gender.Male,   City="Warszawa", Salary=13400m, Skills=["C#", "LINQ", "Azure"] },
-            new() { Id=7, FirstName="Iga",   LastName="Kowal",     Age=31, Gender=Gender.Female, City="Kraków", Salary=9900m,  Skills=["Go", "Kubernetes"] },
+            new() { Id=7, FirstName="Iga",   LastName="Kowal",     Age=31, Gender=Gender.Female, City="KrakÃ³w", Salary=9900m,  Skills=["Go", "Kubernetes"] },
             new() { Id=8, FirstName="Tomek", LastName="Sikora",    Age=29, Gender=Gender.Male,   City="Kielce", Salary=8800m,  Skills=["C#", "MAUI", "Bluetooth"] },
         };
 
         // === POZIOM 1 ===
 
         // Zadanie 1
-        var q1 = people.Where(p => p.City == "Kraków");
+        var q1 = people.Where(p => p.City == "KrakÃ³w");
         Print("Zadanie 1", q1);
 
         // Zadanie 2
@@ -105,10 +105,139 @@ internal class Task1
         Print("Zadanie 4", q4);
 
         // Zadanie 5
-        var q5 = people.(p => p.Age >= 18);
-        Print("Zadanie 2", q5);
+        var q5 = people.Select(p => $"{p.FirstName} {p.LastName}");
+        Print("Zadanie 5", q5);
 
+        // Zadanie 6
+        var q6 = people.Select(p => p.City).Distinct();
+        Print("Zadanie 6", q6);
 
+        // Zadanie 7
+        var q7 = people.Count(p => p.City == "Warszawa");
+        Console.WriteLine($"\nZadanie 7\n{q7}");
+
+        // Zadanie 8
+        var q8 = people.Average(p => p.Salary);
+        Console.WriteLine($"\nZadanie 8\n{q8:F2}");
+
+        // Zadanie 9
+        var q9 = people.MinBy(p => p.Age);
+        Console.WriteLine($"\nZadanie 9\n{q9}");
+
+        // Zadanie 10
+        var q10 = people.Any(p => p.City == "GdaÅ„sk");
+        Console.WriteLine($"\nZadanie 10\n{q10}");
+
+        // === POZIOM 2 ===
+
+        // Zadanie 11
+        var q11 = people
+            .OrderBy(p => p.City)
+            .ThenByDescending(p => p.Salary);
+        Print("Zadanie 11", q11);
+
+        // Zadanie 12
+        var q12 = people.Where(p => p.Age >= 25 && p.Age <= 35);
+        Print("Zadanie 12", q12);
+
+        // Zadanie 13
+        var q13 = people
+            .Where(p => p.City == "Kielce")
+            .Sum(p => p.Salary);
+        Console.WriteLine($"\nZadanie 13\n{q13}");
+
+        // Zadanie 14
+        var q14 = people.FirstOrDefault(p => p.Salary > 10_000);
+        Console.WriteLine($"\nZadanie 14\n{q14}");
+
+        // Zadanie 15
+        var q15 = people
+            .OrderBy(p => p.LastName)
+            .Last();
+        Console.WriteLine($"\nZadanie 15\n{q15}");
+
+        // Zadanie 16
+        var q16 = people.Select(p => $"{p.FirstName} {p.LastName} ({p.City})");
+        Print("Zadanie 16", q16);
+
+        // Zadanie 17
+        var q17 = people.All(p => p.Age >= 18);
+        Console.WriteLine($"\nZadanie 17\n{q17}");
+
+        // Zadanie 18
+        var q18 = people.Count(p => p.Gender == Gender.Female);
+        Console.WriteLine($"\nZadanie 18\n{q18}");
+
+        // Zadanie 19
+        var avgSalary = people.Average(p => p.Salary);
+        var q19 = people.Where(p => p.Salary > avgSalary);
+        Print("Zadanie 19", q19);
+
+        // Zadanie 20
+        var q20 = people
+            .Where(p => p.City == "KrakÃ³w")
+            .MaxBy(p => p.Age);
+        Console.WriteLine($"\nZadanie 2\n{q20}");
+
+        // === POZIOM 3 ===
+
+        // Zadanie 22
+        var q22 = people.Where(p => p.Skills.Contains("C#"));
+        Print("Zadanie 22", q22);
+
+        // Zadanie 23
+        var q23 = people.Where(p => p.Skills.Count >= 3);
+        Print("Zadanie 23", q23);
+
+        // Zadanie 24
+        var q24 = people
+            .Where(p => p.City == "Warszawa")
+            .OrderByDescending(p => p.Age)
+            .Select(p => new { p.FirstName, p.LastName, p.Age, p.Salary });
+        Print("Zadanie 24", q24);
+
+        // Zadanie 25
+        var q25 = people.Any(p => p.Skills.Contains("Azure"));
+        Console.WriteLine($"\nZadanie 25\n{q25}");
+
+        // Zadanie 26
+        var q26 = people.All(p => p.Salary >= 4000);
+        Console.WriteLine($"\nZadanie 26\n{q26}");
+
+        // Zadanie 27
+        var q27 = people.MaxBy(p => p.Salary);
+        Console.WriteLine($"\nZadanie 27\n{q27}");
+
+        // Zadanie 28
+        var q28 = people.MinBy(p => p.Salary);
+        Console.WriteLine($"\nZadanie 28\n{q28}");
+
+        // Zadanie 29
+        var maxAge = people.Max(p => p.Age);
+        var q29 = people.Where(p => p.Age == maxAge);
+        Print("Zadanie 29", q29);
+
+        // === POZIOM 4 ===
+
+        // Zadanie 32
+        var q32 = people.OrderBy(p => p.Skills.Count);
+        Print("Zadanie 32", q32);
+
+        // Zadanie 33
+        var q33 = people
+            .GroupBy(p => p.Salary >= 8000)
+            .ToDictionary(g => g.Key ? ">=8000" : "<8000", g => g.ToList());
+
+        foreach (var group in q33)
+            Print($"Zadanie 33 {group.Key}", group.Value);
+
+        // Zadanie 35
+        var q35 = people
+            .GroupBy(p => $"{p.Age / 10 * 10}â€“{p.Age / 10 * 10 + 9}")
+            .OrderBy(g => g.Key);
+
+        foreach (var group in q35)
+            Print($"Zadanie 35 {group.Key}", group);
 
     }
 }
