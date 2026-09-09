@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>{
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EventBlindingMauiApp.MainPage"
@@ -11,7 +11,8 @@
                 MinimumTrackColor="Blue" 
                 MaximumTrackColor="AliceBlue"
                 Margin="20"
-                ValueChanged="Slider_ValueChanged"/>
+                ValueChanged="Slider_ValueChanged"
+                x:Name="sliderRotation"/>
         <Label x:Name="labelValue"
                Text=""
                HorizontalTextAlignment="Center"/>
@@ -20,6 +21,10 @@
                HorizontalOptions="Center"
                Rotation="90"
                Text="To jest label -->"/>
+
+        <Label HorizontalTextAlignment="Center"
+               Rotation="{Binding Source={x:Reference sliderRotation}, Path=Value}"
+               Text="{Binding Source={x:Reference sliderRotation}, Path=Value}"/>
 
     </StackLayout>
 
