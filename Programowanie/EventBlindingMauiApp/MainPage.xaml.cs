@@ -2,7 +2,6 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
 
         public MainPage()
         {
@@ -18,6 +17,26 @@
 
                 labelValue.Text = slider.Value.ToString();
             }
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            resoultAlert.Text = alert.Text;
+        }
+
+
+        public string Message { get; set; }
+        private string ReturmMessage
+        {
+            get { return ReturmMessage; }
+            set 
+            { ReturmMessage = value;
+                OnPropertyChanged();
+            }
+        }
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            ReturmMessage = Message;
         }
     }
 }

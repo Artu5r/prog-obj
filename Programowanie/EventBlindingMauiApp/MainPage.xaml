@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>{
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EventBlindingMauiApp.MainPage"
@@ -25,6 +25,22 @@
         <Label HorizontalTextAlignment="Center"
                Rotation="{Binding Source={x:Reference sliderRotation}, Path=Value}"
                Text="{Binding Source={x:Reference sliderRotation}, Path=Value}"/>
+
+        <Label HorizontalTextAlignment="Center"
+               BindingContext="{x:Reference sliderRotation}"
+               Rotation="{Binding Value}"
+               Text="{Binding Value}"/>
+
+        <Label Text="Podaj komunikat" />
+        <Entry x:Name="alert" />
+        <Button Text="Wykonaj" Clicked="Button_Clicked" />
+        <Label x:Name="resoultAlert" />
+
+        <Label Text="Podaj komunikat" />
+        <Entry Text="{Binding Message, Source={x:Reference thisPage}}" />
+        <Button Text="Wykonaj" Clicked="Button_Clicked_1" />
+        <Label Text="{Binding ReturmMessage, Source={x:Reference thisPage}}" />
+
 
     </StackLayout>
 
