@@ -26,11 +26,13 @@
 
 
         public string Message { get; set; }
-        private string ReturmMessage
+        private string returmMessage;
+        public string ReturmMessage
         {
-            get { return ReturmMessage; }
+            get { return returmMessage; }
             set 
-            { ReturmMessage = value;
+            {
+                returmMessage = value;
                 OnPropertyChanged();
             }
         }
