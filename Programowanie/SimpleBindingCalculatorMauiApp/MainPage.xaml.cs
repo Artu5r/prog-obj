@@ -24,8 +24,16 @@
         {
             double firstN = Convert.ToDouble(firstNumber);
             double secoundN = Convert.ToDouble(secoundNumber);
-            int suma = int.Parse(firstNumber) + int.Parse(secoundNumber);
-            ReturnMessage = "Suma " + suma.ToString();
+            double suma = firstN + secoundN;
+            double ruznica = firstN - secoundN;
+            double iloczyn = firstN * secoundN;
+            double iloraz = firstN / secoundN;
+
+            string r = "Suma " + suma.ToString() + "\n";
+            r += "Ruznica " + ruznica.ToString() + "\n";
+            r += "Iloczyn " + iloczyn.ToString() + "\n";
+            r += "Iloraz " + iloraz.ToString() + "\n";
+            ReturnMessage = r;
         }
     }
 }
