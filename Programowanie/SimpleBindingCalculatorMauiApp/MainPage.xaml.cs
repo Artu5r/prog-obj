@@ -25,7 +25,7 @@
             double firstN = Convert.ToDouble(firstNumber);
             double secoundN = Convert.ToDouble(secoundNumber);
             int suma = int.Parse(firstNumber) + int.Parse(secoundNumber);
-            ReturnMessage = "Sma"suma.ToString();
+            ReturnMessage = "Suma " + suma.ToString();
         }
     }
 }
