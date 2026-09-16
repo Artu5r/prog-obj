@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleBindingCalculatorMauiApp.MainPage"
+             x:Name="thisPage"
+             Title="">
+
+    <VerticalStackLayout>
+        <Label Text="Podaj liczbe: " />
+        <Entry Text="{Binding firstNumber, Source={x:Reference thisPage}}" />
+
+        <Label Text="Podaj liczbe: " />
+        <Entry Text="{Binding secoundNumber, Source={x:Reference thisPage}}" />
+        
+        <Button Clicked="Button_Clicked_1" Text="Wykonaj" />
+        <Label Text="{Binding ReturnMessage, Source={x:Reference thisPage}}" />
+        
+    </VerticalStackLayout>
+
+</ContentPage>
