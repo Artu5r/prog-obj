@@ -22,20 +22,24 @@
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            if (firstNumber is not null && secoundNumber is not )
+            if (firstNumber is not null 
+                && secoundNumber is not null
+                && double.TryParse(firstNumber, out double firstN)
+                && double.TryParse(secoundNumber, out double secoundN))
             {
-                double firstN = Convert.ToDouble(firstNumber);
-                double secoundN = Convert.ToDouble(secoundNumber);
                 double suma = firstN + secoundN;
                 double ruznica = firstN - secoundN;
                 double iloczyn = firstN * secoundN;
                 double iloraz = firstN / secoundN;
 
-                string r = "Suma " + suma.ToString() + "\n";
-                r += "Ruznica " + ruznica.ToString() + "\n";
-                r += "Iloczyn " + iloczyn.ToString() + "\n";
-                r += "Iloraz " + iloraz.ToString() + "\n";
-                ReturnMessage = r;
+                ReturnMessage = "Suma " + suma.ToString() + "\n";
+                ReturnMessage += "Ruznica " + ruznica.ToString() + "\n";
+                ReturnMessage += "Iloczyn " + iloczyn.ToString() + "\n";
+                ReturnMessage += "Iloraz " + iloraz.ToString() + "\n";
+            }
+            else
+            {
+                ReturnMessage = "Niepoprawna liczba";
             }
 
         }
