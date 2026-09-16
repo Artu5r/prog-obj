@@ -12,7 +12,7 @@
         <Label Text="Podaj liczbe: " />
         <Entry Text="{Binding secoundNumber, Source={x:Reference thisPage}}" />
         
-        <Button Clicked="Button_Clicked_1" Text="Wykonaj" />
+        <Button Clicked="Button_Clicked_1" Text="Oblicz" />
         <Label Text="{Binding ReturnMessage, Source={x:Reference thisPage}}" />
         
     </VerticalStackLayout>
