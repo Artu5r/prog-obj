@@ -23,13 +23,8 @@
                 <Label Text="{Binding StepperValue}" />
             </HorizontalStackLayout>
             
-
-            
-        
             <Label Text="Dostawa ekspresowa" />
             <Switch IsToggled="{Binding IsOn}" />
-
-
 
             <Button Clicked="Button_Clicked_1" Text="Oblicz" />
             <Label Text="{Binding ReturnMessage, Source={x:Reference thisPage}}" />
