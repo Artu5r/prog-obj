@@ -2,8 +2,6 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
@@ -39,24 +37,31 @@
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
+            double orderPrice = 0;
             if (productName is not null
                 && pricePerPsc is not null
-                && double.TryParse(productName, out double firstN)
-                && double.TryParse(pricePerPsc, out double secoundN))
+                && double.TryParse(pricePerPsc, out double pricePerpsc))
             {
-                double suma = firstN + secoundN;
-                double ruznica = firstN - secoundN;
-                double iloczyn = firstN * secoundN;
-                double iloraz = firstN / secoundN;
 
-                ReturnMessage = "Suma " + suma.ToString() + "\n";
-                ReturnMessage += "Ruznica " + ruznica.ToString() + "\n";
-                ReturnMessage += "Iloczyn " + iloczyn.ToString() + "\n";
-                ReturnMessage += "Iloraz " + iloraz.ToString() + "\n";
+                orderPrice = pricePerpsc * stepperValue;
+                string fastDelivery;
+                if (IsOn)
+                { 
+                    fastDelivery = "TAK";
+                    orderPrice += 15;
+                }
+                else
+                    fastDelivery = "NIE";
+
+                ReturnMessage = $"Produkt: {productName}\n" +
+                    $"Cena za sztukę: {pricePerpsc}\n" +
+                    $"Liczba sztuk: {stepperValue}\n" +
+                    $"Dostawa ekspresowa: {fastDelivery}\n" +
+                    $"Wynik: {orderPrice}";
             }
             else
             {
-                ReturnMessage = "Niepoprawna liczba";
+                ReturnMessage = "Nieprawidlowe dane";
             }
 
         }
