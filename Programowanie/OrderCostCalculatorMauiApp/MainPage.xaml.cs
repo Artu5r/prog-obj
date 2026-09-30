@@ -1,10 +1,20 @@
-﻿namespace OrderCostCalculatorMauiApp
+﻿using System.Collections.ObjectModel;
+
+namespace OrderCostCalculatorMauiApp
 {
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
+            DeliveryMethods = new ObservableCollection<string>()
+            {
+                "Odbiór osobisty",
+                "Kurier",
+                "Paczkomat"
+            };
+
+            SelectedDeliveryMethod = DeliveryMethods.First();
         }
 
         public string productName { get; set; }
@@ -35,8 +45,17 @@
             set { isOn = value; OnPropertyChanged(); }
         }
 
+        public ObservableCollection<string> DeliveryMethods { get; set; }
+        private string selectedDeliveryMethod;
+        public string SelectedDeliveryMethod
+        {
+            get { return selectedDeliveryMethod; }
+            set { selectedDeliveryMethod = value; OnPropertyChanged(); }
+        }
+
         private void Button_Clicked_1(object sender, EventArgs e)
         {
+
             double orderPrice = 0;
             if (productName is not null
                 && pricePerPsc is not null

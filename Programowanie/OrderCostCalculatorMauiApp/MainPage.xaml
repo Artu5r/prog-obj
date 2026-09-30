@@ -25,6 +25,10 @@
             
             <Label Text="Dostawa ekspresowa" />
             <Switch IsToggled="{Binding IsOn}" />
+            <Picker Title="Wybierz sposób dostawy"
+                    ItemsSource="{Binding DeliveryMethods}"
+                    SelectedItem="{Binding SelectedDeliveryMethod}"/>
+            <Label Text="{Binding SelectedDeliveryMethod}" VerticalOptions="Center" />
 
             <Button Clicked="Button_Clicked_1" Text="Oblicz" />
             <Label Text="{Binding ReturnMessage, Source={x:Reference thisPage}}" />
