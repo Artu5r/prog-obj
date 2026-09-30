@@ -121,7 +121,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Controls", "06 Controls"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlsMauiApp", "ControlsMauiApp\ControlsMauiApp.csproj", "{7C393384-7C34-4EC6-9005-EE63A56FE87A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Order Cost Calculator", "06 Order Cost Calculator", "{F81C8E85-7532-4B4C-945B-B5FF619F7A2C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 Order Cost Calculator", "07 Order Cost Calculator", "{F81C8E85-7532-4B4C-945B-B5FF619F7A2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderCostCalculatorMauiApp", "OrderCostCalculatorMauiApp\OrderCostCalculatorMauiApp.csproj", "{859AB299-1AAD-4E5F-B8E7-380C83A6D0FE}"
 EndProject
