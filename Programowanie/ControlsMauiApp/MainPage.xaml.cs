@@ -1,7 +1,5 @@
 ﻿using ControlsMauiApp.Data;
-using CoreML;
 using System.Collections.ObjectModel;
-using System.Runtime.ConstrainedExecution;
 
 namespace ControlsMauiApp
 {

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrderCostCalculatorMauiApp.MainPage"
+             x:Name="thisPage"
+             Title=""
+             BindingContext="{x:Reference thisPage}">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Nazwa produktu: " />
+            <Entry Text="{Binding productName, Source={x:Reference thisPage}}" />
+
+            <Label Text="Cena za sztukę: " />
+            <Entry Text="{Binding pricePerPsc, Source={x:Reference thisPage}}" />
+
+            <Label Text="Liczba sztuk: " />
+            <HorizontalStackLayout>
+                <Stepper Increment="1"
+                         Maximum="10"
+                         Minimum="0"
+                         Value="{Binding StepperValue}" />
+                <Label Text="{Binding StepperValue}" />
+            </HorizontalStackLayout>
+            
+
+            
+        
+            <Label Text="Dostawa ekspresowa" />
+            <Switch IsToggled="{Binding IsOn}" />
+
+
+
+            <Button Clicked="Button_Clicked_1" Text="Oblicz" />
+            <Label Text="{Binding ReturnMessage, Source={x:Reference thisPage}}" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
