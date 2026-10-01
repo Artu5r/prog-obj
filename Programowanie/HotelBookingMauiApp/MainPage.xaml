@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HotelBookingMauiApp.MainPage"
              x:Name="thisPage"
-             BindingContext="{x:Reference thisPage}">
+             BindingContext="{x:Reference thisPage}"
+             BackgroundColor="#303030"
+             Title="">
 
     <ScrollView>
         <StackLayout Spacing="10">
