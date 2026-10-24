@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VocabularyFlashcardsMauiApp.MainPage"
+             x:Name="thisPage"
+             Title=""
+             BindingContext="{x:Reference thisPage}">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="20">
+
+            <CarouselView x:Name="carouselCards"
+                          ItemsSource="{Binding Flashcards}"
+                          IndicatorView="indicator"
+                          CurrentItemChanged="Carousel_CurrentItemChanged"
+                          HeightRequest="220"
+                          Loop="False">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <Border Stroke="DarkGray"
+                                    StrokeShape="RoundRectangle 10"
+                                    WidthRequest="260"
+                                    HeightRequest="160"
+                                    Padding="20"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center">
+                                <Label Text="{Binding EnglishWord}"
+                                       FontSize="28"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" />
+                            </Border>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <IndicatorView x:Name="indicator"
+                           HorizontalOptions="Center"
+                           IndicatorColor="LightGray"
+                           SelectedIndicatorColor="DarkGray" />
+
+            <Button Text="Pokaż tłumaczenie"
+                    Clicked="ShowTranslation_Clicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="220" />
+
+            <Label Text="{Binding Translation}"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Button Text="Zacznij od początku"
+                    Clicked="Reset_Clicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="220" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

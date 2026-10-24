@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 instrukcje decyzyjne", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InstrucionIfConsoleApp", "InstrucionIfConsoleApp\InstrucionIfConsoleApp.vcxproj", "{5795C688-654B-46BE-BAD3-A3F0DB1874EF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopDoWhileConsoleApplication", "LoopConsoleApplication\LoopConsoleApplication.vcxproj", "{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopConsoleApplication", "LoopConsoleApplication\LoopConsoleApplication.vcxproj", "{5FE86DC1-3EE2-4AD1-AA30-917563CA1251}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopWhileConsoleApplication", "LoopWhileConsoleApplication\LoopWhileConsoleApplication.vcxproj", "{E08820F5-5636-4BD9-9675-55087361CF68}"
 EndProject
@@ -69,7 +69,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Matura", "Matura", "{523DED
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matura2022MajConsoleApplication", "Matura2022MajConsoleApplication\Matura2022MajConsoleApplication.vcxproj", "{0AFB1D71-35DE-4B95-83D1-0CFD3443102B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matura2022CzerwiecConsoleApplication", "MaturaSprawdzianConsoleApplication\MaturaSprawdzianConsoleApplication.vcxproj", "{220E1E94-ED70-4FD2-898F-C94290D4A173}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaturaSprawdzianConsoleApplication", "MaturaSprawdzianConsoleApplication\MaturaSprawdzianConsoleApplication.vcxproj", "{220E1E94-ED70-4FD2-898F-C94290D4A173}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matura2024MajConsoleApplication", "Matura2024MajConsoleApplication\Matura2024MajConsoleApplication.vcxproj", "{848FEA2F-474A-4A04-A51F-60983FC4F145}"
 EndProject
@@ -128,6 +128,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelBookingMauiApp", "HotelBookingMauiApp\HotelBookingMauiApp.csproj", "{69F00CC7-F9FD-4E74-B6A5-C4A1CEF88CC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsEquipmentRentalMauiApp", "SportsEquipmentRentalMauiApp\SportsEquipmentRentalMauiApp.csproj", "{653D1968-421D-43D1-A651-9FC613D32B9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocabularyFlashcardsMauiApp", "VocabularyFlashcardsMauiApp\VocabularyFlashcardsMauiApp.csproj", "{72960397-4B67-4374-A43A-6D11FFD59AF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -626,6 +628,19 @@ Global
 		{653D1968-421D-43D1-A651-9FC613D32B9E}.Release|x64.Build.0 = Release|Any CPU
 		{653D1968-421D-43D1-A651-9FC613D32B9E}.Release|x86.ActiveCfg = Release|Any CPU
 		{653D1968-421D-43D1-A651-9FC613D32B9E}.Release|x86.Build.0 = Release|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Debug|x64.Build.0 = Debug|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Debug|x86.Build.0 = Debug|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Release|x64.ActiveCfg = Release|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Release|x64.Build.0 = Release|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Release|x86.ActiveCfg = Release|Any CPU
+		{72960397-4B67-4374-A43A-6D11FFD59AF8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -692,6 +707,7 @@ Global
 		{6AA2260C-56EB-4362-95CD-25A50DD33639} = {49688F03-9B87-43D3-8F98-4EE3D0EC0CD5}
 		{69F00CC7-F9FD-4E74-B6A5-C4A1CEF88CC7} = {6AA2260C-56EB-4362-95CD-25A50DD33639}
 		{653D1968-421D-43D1-A651-9FC613D32B9E} = {6AA2260C-56EB-4362-95CD-25A50DD33639}
+		{72960397-4B67-4374-A43A-6D11FFD59AF8} = {6AA2260C-56EB-4362-95CD-25A50DD33639}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC52CA19-2E71-4B24-A22D-395CD0BC76FD}
