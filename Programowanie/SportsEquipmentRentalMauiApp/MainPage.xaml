@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SportsEquipmentRentalMauiApp.MainPage"
@@ -7,7 +7,74 @@
              BindingContext="{x:Reference thisPage}">
 
     <ScrollView>
-        
+        <StackLayout Spacing="12" Padding="20">
+
+            <Label Text="Wypożyczalnia sprzętu sportowego"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Imię i nazwisko:"
+                       VerticalOptions="Center" />
+                <Entry Text="{Binding FullName}"
+                       Placeholder="Wpisz imię i nazwisko"
+                       HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+
+            <Label Text="Wybierz sprzęt:"
+                   FontAttributes="Bold" />
+
+            <CollectionView ItemsSource="{Binding EquipmentCollection}"
+                            SelectedItem="{Binding SelectedEquipment}"
+                            SelectionMode="Single"
+                            HeightRequest="180">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10,8" ColumnDefinitions="*, Auto">
+                            <Label Grid.Column="0"
+                                   Text="{Binding Name}"
+                                   FontAttributes="Bold"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1"
+                                   Text="{Binding PriceFormatted}"
+                                   VerticalOptions="Center" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Liczba dni wypożyczenia:"
+                       VerticalOptions="Center" />
+                <Stepper Minimum="1"
+                         Maximum="7"
+                         Increment="1"
+                         Value="{Binding RentalDays}"
+                         VerticalOptions="Center" />
+                <Label Text="{Binding RentalDays}"
+                       VerticalOptions="Center"
+                       FontAttributes="Bold" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Ubezpieczenie (5 zł / dzień):"
+                       VerticalOptions="Center" />
+                <CheckBox IsChecked="{Binding HasInsurance}"
+                          VerticalOptions="Center" />
+            </StackLayout>
+
+            <Button Text="Oblicz koszt"
+                    Command="{Binding CalculateCostCommand}"
+                    Clicked="Button_Clicked" />
+
+            <Label Text="Podsumowanie:"
+                   FontAttributes="Bold"
+                   FontSize="16" />
+            <Label Text="{Binding Summary}"
+                   FontSize="15" />
+
+        </StackLayout>
     </ScrollView>
 
 </ContentPage>
